@@ -30,6 +30,7 @@ package com.example.android.camerax.video.fragments
 
 import android.annotation.SuppressLint
 import android.content.res.Configuration
+import android.media.Image
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -100,20 +101,23 @@ class CaptureFragment : Fragment() {
      */
 
 
+    @SuppressLint("UnsafeOptInUsageError")
     private fun bindVisionDetection(): ImageAnalysis {
         val imageAnalysis = ImageAnalysis.Builder()
                 .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
                 .setOutputImageFormat(ImageAnalysis.OUTPUT_IMAGE_FORMAT_RGBA_8888)
                 .build()
         imageAnalysis.setAnalyzer(ContextCompat.getMainExecutor(requireContext())) { image: ImageProxy ->
+
             // Process each frame for object detection here
             // Overlay detected objects on the camera preview
             // Continue processing frames in real-time
 
             //Log.d("Analysis", "Image width: " + image.width)
             //Log.d("Analysis", "Image height: " + image.height)
-//            imageToBitmap(image)
-            Log.d("Analysis", apriltag.stringFromJNI(imageToByteArray(image), image.width, image.height))
+            val pixelArray = imageToPixelArray(image.image!!)
+//            imageDiagnostics(image)
+            Log.d("Analysis", apriltag.stringFromJNI(pixelArray, image.width, image.height))
 //            val imageAsString = imageToByteArray(image).joinToString { byte->byte.toString() }
 //            Log.d("Analysis", imageAsString)
             image.close()
@@ -122,14 +126,68 @@ class CaptureFragment : Fragment() {
     }
 
     @SuppressLint("UnsafeOptInUsageError")
-    private fun imageToBitmap(imageProxy: ImageProxy){
+    private fun imageDiagnostics(imageProxy: ImageProxy){
         val image = imageProxy.image
         if (image != null) {
+            val pixelArray = imageToPixelArray(image)
             Log.d("analysis", "# Planes: " + image.planes.size)
+            Log.d("analysis", "# pixels: " + pixelArray.size)
+            Log.d("analysis", "first pixel: " + pixelToString(pixelArray.get(0)))
+            Log.d("analysis", "image width: " + image.width)
+            Log.d("analysis", "image height: " + image.height)
+            Log.d("analysis", "image size: " + image.width*image.height)
+//            Log.d("analysis", "are all pixels the same? " + areAllPixelsTheSame(pixelArray))
         }else{
             Log.d("analysis", "image is null!")
         }
+    }
 
+    private fun pixelToString(pixel: IntArray): String{
+        var str = "(";
+        for(index in pixel.indices){
+            var num = pixel[index]
+            str+=num
+            str+= ", "
+        }
+        str+=")"
+        return str
+    }
+
+    private fun areAllPixelsTheSame(pixelArray: Array<IntArray>): Boolean{
+        val normalPixel = intArrayOf(16,16,16,255)
+        for(i in pixelArray.indices){
+            var pixel = pixelArray[i]
+            for(j in normalPixel.indices){
+                var normalVal = normalPixel[j]
+                var currentVal = pixel[j]
+                if(normalVal != currentVal){
+                    Log.d("UNIQUE PIXEL", "Pixel #: " + i)
+                    Log.d("UNIQUE PIXEL", "Pixel vals: " + pixelToString(pixel))
+                }
+            }
+        }
+        return true
+    }
+
+    @SuppressLint("UnsafeOptInUsageError")
+    private fun imageToPixelArray(image: Image): Array<IntArray>{
+        val rgbaPlane = image.planes[0]
+        val buffer = rgbaPlane.buffer
+        val bytes = ByteArray(buffer.remaining())
+        buffer.get(bytes)
+
+        val pixelArray = ArrayList<IntArray>()
+        // Now you can iterate through the pixel data
+        for (i in 0 until bytes.size step 4) {
+            val red = bytes[i].toInt() and 0xFF // Red component
+            val green = bytes[i + 1].toInt() and 0xFF // Green component
+            val blue = bytes[i + 2].toInt() and 0xFF // Blue component
+            val alpha = bytes[i + 3].toInt() and 0xFF // Alpha component
+            val pixel = intArrayOf(red, green, blue, alpha);
+            pixelArray.add(pixel)
+            // Process the RGBA values
+        }
+        return pixelArray.toTypedArray()
     }
 
     // Convert ImageProxy to Bitmap

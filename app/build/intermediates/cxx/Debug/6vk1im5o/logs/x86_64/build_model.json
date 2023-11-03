@@ -124,7 +124,7 @@
         "rootBuildGradleFolder": "C:\\Users\\alruz\\Documents\\Code\\Scrap\\Camera2Basic\\CameraXVideo",
         "sdkFolder": "C:\\Users\\alruz\\AppData\\Local\\Android\\Sdk",
         "isBuildOnlyTargetAbiEnabled": true,
-        "ideBuildTargetAbi": "x86_64,x86",
+        "ideBuildTargetAbi": "x86_64,arm64-v8a",
         "isCmakeBuildCohabitationEnabled": false,
         "isPrefabEnabled": false
       },

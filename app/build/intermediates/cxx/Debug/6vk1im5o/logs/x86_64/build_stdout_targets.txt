@@ -1,2 +1,3 @@
 ninja: Entering directory `C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\.cxx\Debug\6vk1im5o\x86_64'
-ninja: no work to do.
+[1/2] Building C object CMakeFiles/ApriltagTower.dir/src/main/cpp/ApriltagTower.c.o
+[2/2] Linking C shared library ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86_64\libApriltagTower.so

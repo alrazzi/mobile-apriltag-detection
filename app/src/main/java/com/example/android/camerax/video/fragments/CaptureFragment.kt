@@ -55,6 +55,7 @@ import androidx.lifecycle.whenCreated
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.example.android.camerax.video.R
+import com.example.android.camerax.video.apriltag
 import com.example.android.camerax.video.databinding.FragmentCaptureBinding
 import com.example.android.camerax.video.extensions.getAspectRatio
 import com.example.android.camerax.video.extensions.getAspectRatioString
@@ -111,8 +112,8 @@ class CaptureFragment : Fragment() {
 
             //Log.d("Analysis", "Image width: " + image.width)
             //Log.d("Analysis", "Image height: " + image.height)
-            imageToBitmap(image)
-//            Log.d("Analysis", apriltag.stringFromJNI(imageToBitmap(image.image), image.width, image.length))
+//            imageToBitmap(image)
+            Log.d("Analysis", apriltag.stringFromJNI(imageToByteArray(image), image.width, image.height))
 //            val imageAsString = imageToByteArray(image).joinToString { byte->byte.toString() }
 //            Log.d("Analysis", imageAsString)
             image.close()

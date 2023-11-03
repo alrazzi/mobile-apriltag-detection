@@ -1,0 +1,16 @@
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Found Threads: TRUE  
+-- Could NOT find PythonLibs (missing: PYTHON_LIBRARIES PYTHON_INCLUDE_DIRS) 
+-- OpenCV not found: Not building demo
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/.cxx/Debug/6vk1im5o/x86_64

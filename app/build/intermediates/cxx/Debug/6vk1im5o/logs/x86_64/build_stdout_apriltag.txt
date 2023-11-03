@@ -1,0 +1,25 @@
+ninja: Entering directory `C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\.cxx\Debug\6vk1im5o\x86_64'
+[1/1] Linking C shared library ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86_64\libapriltag.so
+FAILED: ../../../../build/intermediates/cxx/Debug/6vk1im5o/obj/x86_64/libapriltag.so 
+cmd.exe /C "cd . && C:\Users\alruz\AppData\Local\Android\Sdk\ndk\23.1.7779620\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=x86_64-none-linux-android21 --sysroot=C:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/windows-x86_64/sysroot -fPIC -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -g  -fno-limit-debug-info  -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Qunused-arguments -Wl,--no-undefined -shared -Wl,-soname,libapriltag.so -o ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86_64\libapriltag.so CMakeFiles/apriltag.dir/src/main/cpp/ApriltagTower.c.o  -latomic -lm && cd ."
+ld: error: undefined symbol: apriltag_detector_create
+>>> referenced by ApriltagTower.c:31 (C:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp\ApriltagTower.c:31)
+>>>               CMakeFiles/apriltag.dir/src/main/cpp/ApriltagTower.c.o:(Java_com_example_android_camerax_video_apriltag_00024Companion_stringFromJNI)
+
+ld: error: undefined symbol: tag36h11_create
+>>> referenced by ApriltagTower.c:32 (C:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp\ApriltagTower.c:32)
+>>>               CMakeFiles/apriltag.dir/src/main/cpp/ApriltagTower.c.o:(Java_com_example_android_camerax_video_apriltag_00024Companion_stringFromJNI)
+
+ld: error: undefined symbol: tag36h11_destroy
+>>> referenced by ApriltagTower.c:43 (C:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp\ApriltagTower.c:43)
+>>>               CMakeFiles/apriltag.dir/src/main/cpp/ApriltagTower.c.o:(Java_com_example_android_camerax_video_apriltag_00024Companion_stringFromJNI)
+
+ld: error: undefined symbol: apriltag_detector_destroy
+>>> referenced by ApriltagTower.c:44 (C:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp\ApriltagTower.c:44)
+>>>               CMakeFiles/apriltag.dir/src/main/cpp/ApriltagTower.c.o:(Java_com_example_android_camerax_video_apriltag_00024Companion_stringFromJNI)
+
+ld: error: undefined symbol: apriltag_detector_add_family_bits
+>>> referenced by apriltag.h:245 (C:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include\apriltag.h:245)
+>>>               CMakeFiles/apriltag.dir/src/main/cpp/ApriltagTower.c.o:(apriltag_detector_add_family)
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.

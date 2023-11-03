@@ -1,0 +1,11 @@
+ninja: Entering directory `C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\.cxx\Debug\6vk1im5o\x86_64'
+[1/4] Building C object CMakeFiles/ApriltagTower.dir/src/main/cpp/include/apriltag_pywrap.c.o
+FAILED: CMakeFiles/ApriltagTower.dir/src/main/cpp/include/apriltag_pywrap.c.o 
+C:\Users\alruz\AppData\Local\Android\Sdk\ndk\23.1.7779620\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=x86_64-none-linux-android21 --sysroot=C:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DApriltagTower_EXPORTS -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -g  -fno-limit-debug-info -fPIC -MD -MT CMakeFiles/ApriltagTower.dir/src/main/cpp/include/apriltag_pywrap.c.o -MF CMakeFiles\ApriltagTower.dir\src\main\cpp\include\apriltag_pywrap.c.o.d -o CMakeFiles/ApriltagTower.dir/src/main/cpp/include/apriltag_pywrap.c.o -c C:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/apriltag_pywrap.c
+C:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/apriltag_pywrap.c:4:10: fatal error: 'Python.h' file not found
+#include <Python.h>
+         ^~~~~~~~~~
+1 error generated.
+[2/4] Building C object CMakeFiles/ApriltagTower.dir/src/main/cpp/include/apriltag_pose.c.o
+[3/4] Building C object CMakeFiles/ApriltagTower.dir/src/main/cpp/include/apriltag_quad_thresh.c.o
+ninja: build stopped: subcommand failed.

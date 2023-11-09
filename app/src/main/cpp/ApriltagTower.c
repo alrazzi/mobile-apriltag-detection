@@ -107,9 +107,9 @@ char* test_img(JNIEnv *env, jobject instance, jobjectArray imageData, jint width
     // All checks passed; the image is valid
     return strdup("everything passed!");
 }
-apriltag_pose_t get_pose(apriltag_detection_t detection){
+apriltag_pose_t get_pose(apriltag_detection_t *detection){
     apriltag_detection_info_t info;
-    info.det = &detection;
+    info.det = detection;
     info.tagsize = 0.05; // in meters
     info.fx = 657;
     info.fy = 657.26;
@@ -139,7 +139,7 @@ double get_pose_error(apriltag_detection_t detection){
     return err;
 }
 
-apriltag_detection_t get_best_detection(zarray_t *detections){
+apriltag_detection_t* get_best_detection(zarray_t *detections){
     apriltag_detection_t* best_detection = NULL;
     double least_error = MAXFLOAT;
     apriltag_pose_t pose;
@@ -153,9 +153,36 @@ apriltag_detection_t get_best_detection(zarray_t *detections){
             best_detection=det;
         }
     }
-    return *best_detection;
+    return best_detection;
+}
+void cleanup(apriltag_detector_t *td ,apriltag_family_t *tf,image_u8_t *img){
+    tag36h11_destroy(tf);
+    apriltag_detector_destroy(td);
+    if (img) {
+        if (img->buf) {
+            free(img->buf); // Free the pixel data
+        }
+        free(img);      // Free the image structure
+    }
 }
 
+double get_yaw(apriltag_pose_t pose){
+    double x = pose.t->data[0];
+    double y = pose.t->data[1];
+    double z = pose.t->data[2];
+
+    double yaw = atan2(x, z) * 180.0 / M_PI;
+    return yaw;
+}
+
+double get_dist(apriltag_pose_t pose){
+    double x = pose.t->data[0];
+    double y = pose.t->data[1];
+    double z = pose.t->data[2];
+
+    double dist = sqrt(pow(x,2) + pow(y,2) + pow(z,2));
+    return dist;
+}
 jstring
 Java_com_example_android_camerax_video_apriltag_00024Companion_stringFromJNI( JNIEnv* env, jobject thiz, jbyteArray pixelArray, jint width, jint height)
 {
@@ -165,46 +192,22 @@ Java_com_example_android_camerax_video_apriltag_00024Companion_stringFromJNI( JN
     apriltag_detector_t *td = apriltag_detector_create();
     apriltag_family_t *tf = tag36h11_create();
     apriltag_detector_add_family(td, tf);
-        zarray_t *detections = apriltag_detector_detect(td, img);
+    zarray_t *detections = apriltag_detector_detect(td, img);
+
+    apriltag_detection_t* best_detection = get_best_detection(detections);
+    if(best_detection==NULL){
+        cleanup(td, tf, img);
+        return (*env)->NewStringUTF(env, "NO apriltags detected");
+    }
+    apriltag_pose_t pose = get_pose(best_detection);
     int num_detections = zarray_size(detections);
-    int id_found = -1;
-    apriltag_pose_t pose;
-    double yaw=-1;
-    double dist=-1;
-    for (int i = 0; i < zarray_size(detections); i++) {
-        apriltag_detection_t *det;
-        zarray_get(detections, i, &det);
-        id_found = det->id;
+    int id = best_detection->id;
+    double yaw = get_yaw(pose);
+    double dist = get_dist(pose);
 
-        // Do stuff with detections here.
-        apriltag_detection_info_t info;
-        info.det = det;
-        info.tagsize = 0.05; // in meters
-        info.fx = 657;
-        info.fy = 657.26;
-        info.cx = 312.18;
-        info.cy = 241.739;
+    cleanup(td, tf, img);
 
-        // Then call estimate_tag_pose.
-        double err = estimate_tag_pose(&info, &pose);
-        double x = pose.t->data[0];
-        double y = pose.t->data[1];
-        double z = pose.t->data[2];
-
-        yaw = atan2(x, z) * 180.0 / M_PI;
-        dist = sqrt(pow(x,2) + pow(y,2) + pow(z,2));
-        break;
-    }
-    // Cleanup.
-    tag36h11_destroy(tf);
-    apriltag_detector_destroy(td);
-    if (img) {
-        if (img->buf) {
-            free(img->buf); // Free the pixel data
-        }
-        free(img);      // Free the image structure
-    }
-        char num_det_str[40];  // Assuming a maximum of 20 characters for the integer
-    snprintf(num_det_str, sizeof(num_det_str), "Id detected: %d; yaw: %.1f; dist: %.2f", id_found, yaw, dist);
+    char num_det_str[60];  // Assuming a maximum of 20 characters for the integer
+    snprintf(num_det_str, sizeof(num_det_str), "Id detected: %d; yaw: %.1f; dist: %.2f; # detections: %d", id, yaw, dist, num_detections);
     return (*env)->NewStringUTF(env, num_det_str);
 }

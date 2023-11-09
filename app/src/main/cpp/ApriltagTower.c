@@ -18,6 +18,8 @@
 #include <jni.h>
 #include "apriltag.h"
 #include "tag36h11.h"
+#include "apriltag_pose.h"
+#include <math.h>
 /* This is a trivial JNI example where we use a native method
  * to return a new VM String. See the corresponding Java source
  * file located at:
@@ -60,13 +62,9 @@ jlong pixel_array_to_uint_8_img(JNIEnv *env, jobject instance, jobjectArray pixe
         }
     }
 
-    // You now have 'image' populated with pixel data.
-
-    // Optionally perform additional processing on 'image', e.g., decimation or rotation.
-
-    // Return a pointer to the 'image' structure (cast to jlong)
     return (jlong)image;
 }
+
 char* test_img(JNIEnv *env, jobject instance, jobjectArray imageData, jint width, jint height, jlong imagePointer) {
     // Cast the image pointer back to image_u8_t
     image_u8_t *image = (image_u8_t*)imagePointer;
@@ -109,6 +107,55 @@ char* test_img(JNIEnv *env, jobject instance, jobjectArray imageData, jint width
     // All checks passed; the image is valid
     return strdup("everything passed!");
 }
+apriltag_pose_t get_pose(apriltag_detection_t detection){
+    apriltag_detection_info_t info;
+    info.det = &detection;
+    info.tagsize = 0.05; // in meters
+    info.fx = 657;
+    info.fy = 657.26;
+    info.cx = 312.18;
+    info.cy = 241.739;
+
+    // Then call estimate_tag_pose.
+    apriltag_pose_t pose;
+    double err = estimate_tag_pose(&info, &pose);
+
+    return pose;
+}
+
+double get_pose_error(apriltag_detection_t detection){
+    apriltag_detection_info_t info;
+    info.det = &detection;
+    info.tagsize = 0.05; // in meters
+    info.fx = 657;
+    info.fy = 657.26;
+    info.cx = 312.18;
+    info.cy = 241.739;
+
+    // Then call estimate_tag_pose.
+    apriltag_pose_t pose;
+    double err = estimate_tag_pose(&info, &pose);
+
+    return err;
+}
+
+apriltag_detection_t get_best_detection(zarray_t *detections){
+    apriltag_detection_t* best_detection = NULL;
+    double least_error = MAXFLOAT;
+    apriltag_pose_t pose;
+    for (int i = 0; i < zarray_size(detections); i++) {
+        apriltag_detection_t *det;
+        zarray_get(detections, i, &det);
+
+        double err = get_pose_error(*det);
+        if(err < least_error){
+            least_error=err;
+            best_detection=det;
+        }
+    }
+    return *best_detection;
+}
+
 jstring
 Java_com_example_android_camerax_video_apriltag_00024Companion_stringFromJNI( JNIEnv* env, jobject thiz, jbyteArray pixelArray, jint width, jint height)
 {
@@ -121,12 +168,32 @@ Java_com_example_android_camerax_video_apriltag_00024Companion_stringFromJNI( JN
         zarray_t *detections = apriltag_detector_detect(td, img);
     int num_detections = zarray_size(detections);
     int id_found = -1;
+    apriltag_pose_t pose;
+    double yaw=-1;
+    double dist=-1;
     for (int i = 0; i < zarray_size(detections); i++) {
         apriltag_detection_t *det;
         zarray_get(detections, i, &det);
         id_found = det->id;
 
         // Do stuff with detections here.
+        apriltag_detection_info_t info;
+        info.det = det;
+        info.tagsize = 0.05; // in meters
+        info.fx = 657;
+        info.fy = 657.26;
+        info.cx = 312.18;
+        info.cy = 241.739;
+
+        // Then call estimate_tag_pose.
+        double err = estimate_tag_pose(&info, &pose);
+        double x = pose.t->data[0];
+        double y = pose.t->data[1];
+        double z = pose.t->data[2];
+
+        yaw = atan2(x, z) * 180.0 / M_PI;
+        dist = sqrt(pow(x,2) + pow(y,2) + pow(z,2));
+        break;
     }
     // Cleanup.
     tag36h11_destroy(tf);
@@ -137,72 +204,7 @@ Java_com_example_android_camerax_video_apriltag_00024Companion_stringFromJNI( JN
         }
         free(img);      // Free the image structure
     }
-        char num_det_str[20];  // Assuming a maximum of 20 characters for the integer
-    snprintf(num_det_str, sizeof(num_det_str), "Id detected: %d", id_found);
+        char num_det_str[40];  // Assuming a maximum of 20 characters for the integer
+    snprintf(num_det_str, sizeof(num_det_str), "Id detected: %d; yaw: %.1f; dist: %.2f", id_found, yaw, dist);
     return (*env)->NewStringUTF(env, num_det_str);
 }
-
-//    return (*env)->NewStringUTF(env, result);
-//    }else{
-//        return (*env)->NewStringUTF(env, "The test failed! :(");
-//    }
-//    return (*env)->NewStringUTF(env, "Hello from C!");
-//    if(data == NULL){
-//        return (*env)->NewStringUTF(env, "Error creating image structure.");
-//    }
-//    jbyte* pixelData = (*env)->GetByteArrayElements(env, data, NULL);
-//
-//    image_u8_t *im = image_u8_create(width, height);
-////
-////    // Check if the image_u8_t structure was created successfully
-//    if (im == NULL) {
-//        // Handle the error and return an error message
-//        return (*env)->NewStringUTF(env, "Error creating image structure.");
-//    }
-////
-////    // Cast the pixelData to an array of RGBA pixels
-//    uint32_t *rgbaPixels = (uint32_t *)pixelData;
-////
-////    // Iterate through each pixel in the Bitmap and copy its red component to the image
-//    for (int y = 0; y < height; y++) {
-//        for (int x = 0; x < width; x++) {
-//            // Extract the red component from the RGBA pixel (assuming 32-bit RGBA format)
-//            uint8_t red = (rgbaPixels[y * width + x] >> 16) & 0xFF;
-//
-//            // Set the corresponding pixel in the image_u8_t structure
-//            im->buf[y * im->stride + x] = red;
-//        }
-//    }
-//    apriltag_detector_t *td = apriltag_detector_create();
-//    apriltag_family_t *tf = tag36h11_create();
-//    apriltag_detector_add_family(td, tf);
-//        zarray_t *detections = apriltag_detector_detect(td, im);
-//    int num_detections = zarray_size(detections);
-//    int id_found = -1;
-//    for (int i = 0; i < zarray_size(detections); i++) {
-//        apriltag_detection_t *det;
-//        zarray_get(detections, i, &det);
-//        id_found = det->id;
-//
-//        // Do stuff with detections here.
-//    }
-//    // Cleanup.
-//    tag36h11_destroy(tf);
-//    apriltag_detector_destroy(td);
-//    (*env)->ReleaseByteArrayElements(env, data, pixelData, 0);
-//    if (im) {
-//        if (im->buf) {
-//            free(im->buf); // Free the pixel data
-//        }
-//        free(im);      // Free the image structure
-//    }
-//    // Format the id_found as a string
-//    char num_det_str[20];  // Assuming a maximum of 20 characters for the integer
-//    snprintf(num_det_str, sizeof(num_det_str), "%d", num_det_str);
-//    return (*env)->NewStringUTF(env, num_det_str);
-
-//    // Create the result string
-//    char result[50];  // Adjust the size as needed
-//    snprintf(result, sizeof(result), "I found id: %s", id_str);
-//
-//    return (*env)->NewStringUTF(env, result);

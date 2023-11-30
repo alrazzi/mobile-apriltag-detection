@@ -53,7 +53,17 @@ build CMakeFiles/ApriltagTower.dir/src/main/cpp/ApriltagTower.c.o: C_COMPILER__A
   DEFINES = -DApriltagTower_EXPORTS
   DEP_FILE = CMakeFiles\ApriltagTower.dir\src\main\cpp\ApriltagTower.c.o.d
   FLAGS = -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -g  -fno-limit-debug-info -fPIC -pthread
-  INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/.cxx/Debug/6vk1im5o/x86/src/main/cpp/include -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/.cxx/Debug/6vk1im5o/x86/src/main/cpp/include/common -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
+  INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/.cxx/Debug/6vk1im5o/x86/src/main/cpp/include -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/.cxx/Debug/6vk1im5o/x86/src/main/cpp/include/common -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/.cxx/Debug/6vk1im5o/x86/src/main/cpp -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
+  OBJECT_DIR = CMakeFiles\ApriltagTower.dir
+  OBJECT_FILE_DIR = CMakeFiles\ApriltagTower.dir\src\main\cpp
+  TARGET_COMPILE_PDB = CMakeFiles\ApriltagTower.dir\
+  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libApriltagTower.pdb
+
+build CMakeFiles/ApriltagTower.dir/src/main/cpp/PoseMath.c.o: C_COMPILER__ApriltagTower_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/PoseMath.c || cmake_object_order_depends_target_ApriltagTower
+  DEFINES = -DApriltagTower_EXPORTS
+  DEP_FILE = CMakeFiles\ApriltagTower.dir\src\main\cpp\PoseMath.c.o.d
+  FLAGS = -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -g  -fno-limit-debug-info -fPIC -pthread
+  INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/.cxx/Debug/6vk1im5o/x86/src/main/cpp/include -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/.cxx/Debug/6vk1im5o/x86/src/main/cpp/include/common -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/.cxx/Debug/6vk1im5o/x86/src/main/cpp -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = CMakeFiles\ApriltagTower.dir
   OBJECT_FILE_DIR = CMakeFiles\ApriltagTower.dir\src\main\cpp
   TARGET_COMPILE_PDB = CMakeFiles\ApriltagTower.dir\
@@ -67,7 +77,7 @@ build CMakeFiles/ApriltagTower.dir/src/main/cpp/ApriltagTower.c.o: C_COMPILER__A
 #############################################
 # Link the shared library ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libApriltagTower.so
 
-build ../../../../build/intermediates/cxx/Debug/6vk1im5o/obj/x86/libApriltagTower.so: C_SHARED_LIBRARY_LINKER__ApriltagTower_Debug CMakeFiles/ApriltagTower.dir/src/main/cpp/ApriltagTower.c.o | ../../../../build/intermediates/cxx/Debug/6vk1im5o/obj/x86/libapriltagd.so || ../../../../build/intermediates/cxx/Debug/6vk1im5o/obj/x86/libapriltagd.so
+build ../../../../build/intermediates/cxx/Debug/6vk1im5o/obj/x86/libApriltagTower.so: C_SHARED_LIBRARY_LINKER__ApriltagTower_Debug CMakeFiles/ApriltagTower.dir/src/main/cpp/ApriltagTower.c.o CMakeFiles/ApriltagTower.dir/src/main/cpp/PoseMath.c.o | ../../../../build/intermediates/cxx/Debug/6vk1im5o/obj/x86/libapriltagd.so || ../../../../build/intermediates/cxx/Debug/6vk1im5o/obj/x86/libapriltagd.so
   LANGUAGE_COMPILE_FLAGS = -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -g  -fno-limit-debug-info
   LINK_FLAGS = -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Qunused-arguments -Wl,--no-undefined
   LINK_LIBRARIES = ../../../../build/intermediates/cxx/Debug/6vk1im5o/obj/x86/libapriltagd.so  -pthread  -lm   -latomic -lm

@@ -20,13 +20,60 @@
 #include "tag36h11.h"
 #include "apriltag_pose.h"
 #include <math.h>
+#include <stdbool.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+
 /* This is a trivial JNI example where we use a native method
  * to return a new VM String. See the corresponding Java source
  * file located at:
  *
  *   apps/samples/hello-jni/project/src/com/example/hellojni/HelloJni.java
  */
+apriltag_pose_t* set_apriltag_pose(double R_data[9], double t_data[3]) {
+    apriltag_pose_t* pose = malloc(sizeof(apriltag_pose_t));
 
+    // Assuming matd_create_data initializes a matrix with the provided data
+    pose->R = matd_create_data(3, 3, R_data);
+    pose->t = matd_create_data(3, 1, t_data);
+
+    return pose;
+}
+static apriltag_pose_t tag_field[4];
+void initialize_tag_field() {
+    // Set the values for 0th element (North)
+    double R_data0[9] = {-1.0, 0.0, 0.0,
+                         0.0, -1.0, 0.0,
+                         0.0, 0.0, 1.0};
+    double t_data0[3] = {0, 0, 1};
+    tag_field[0] = *set_apriltag_pose(R_data0, t_data0);
+
+    // Set the values for 1th element (East)
+    double R_data1[9] = {0.0, 1.0, 0.0,
+                         -1.0, 0.0, 0.0,
+                         0.0, 0.0, 1.0};
+    double t_data1[3] = {1, 0, 0};
+    tag_field[1] = *set_apriltag_pose(R_data1, t_data1);
+
+    // Set the values for 2th element (South)
+    double R_data2[9] = {1.0, 0.0, 0.0,
+                         0.0, 1.0, 0.0,
+                         0.0, 0.0, 1.0};
+    double t_data2[3] = {0, 0, -1};
+    tag_field[2] = *set_apriltag_pose(R_data2, t_data2);
+
+    // Set the values for 3th element (West)
+    double R_data3[9] = {0.0, -1.0, 0.0,
+                         1.0,  0.0, 0.0,
+                         0.0,  0.0, 1.0};
+    double t_data3[3] = {-1, 0, 0};
+    tag_field[3] = *set_apriltag_pose(R_data3, t_data3);
+}
+
+bool is_tag_in_field(int id) {
+    return sizeof(tag_field) > id;
+}
 jlong pixel_array_to_uint_8_img(JNIEnv *env, jobject instance, jobjectArray pixelArray, jint width, jint height) {
     // Create an instance of image_u8_t
     image_u8_t *image = image_u8_create_stride((int) width, (int) height, (int) width);
@@ -126,7 +173,7 @@ apriltag_pose_t get_pose(apriltag_detection_t *detection){
 double get_pose_error(apriltag_detection_t detection){
     apriltag_detection_info_t info;
     info.det = &detection;
-    info.tagsize = 0.05; // in meters
+    info.tagsize = 0.02; // in meters
     info.fx = 657;
     info.fy = 657.26;
     info.cx = 312.18;
@@ -146,6 +193,10 @@ apriltag_detection_t* get_best_detection(zarray_t *detections){
     for (int i = 0; i < zarray_size(detections); i++) {
         apriltag_detection_t *det;
         zarray_get(detections, i, &det);
+
+//        if(!is_tag_in_field(det->id)){
+//            continue;
+//        }
 
         double err = get_pose_error(*det);
         if(err < least_error){
@@ -183,9 +234,104 @@ double get_dist(apriltag_pose_t pose){
     double dist = sqrt(pow(x,2) + pow(y,2) + pow(z,2));
     return dist;
 }
+
+apriltag_pose_t get_abs_pos(int id, apriltag_pose_t pose){
+    apriltag_pose_t tag_pos = tag_field[id];
+
+}
+//MY TRY
+void convert1DTo2D(double array1D[9], double array2D[3][3]) {
+    int k = 0;
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            array2D[i][j] = array1D[k++];
+        }
+    }
+}
+
+void rotateTByR(double t[3], double R[9], double result[3]){
+    // Matrix-vector multiplication
+    double R2D[3][3];
+    convert1DTo2D(R, R2D);
+
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            result[i] += R2D[i][j] * t[j];
+        }
+    }
+}
+void flattenMatrix(double matrix[3][3], double result[9]) {
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            result[i * 3 + j] = matrix[i][j];
+        }
+    }
+}
+void rotateRByR(double R1[3][3], double R2[3][3], double flattened_result[9]) {
+    double R1_2D[3][3];
+    convert1DTo2D(R1, R1_2D);
+    double R2_2D[3][3];
+    convert1DTo2D(R2, R2_2D);
+
+    double result[3][3];
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            result[i][j] = 0;
+            for (int k = 0; k < 3; ++k) {
+                result[i][j] += R1_2D[i][k] * R2_2D[k][j];
+            }
+        }
+    }
+    flattenMatrix(result, flattened_result);
+}
+void addTtoT(double T1[3], double T2[3], double result[3]) {
+    for (int i = 0; i < 3; ++i) {
+        result[i] = T1[i] + T2[i];
+    }
+}
+apriltag_pose_t TransformBy(apriltag_pose_t pose, apriltag_pose_t transform){
+    double added_T[3];
+    rotateTByR(transform.t->data, pose.R->data, added_T);
+    double new_T[3];
+    addTtoT(pose.t->data, added_T, new_T);
+
+    double new_R[9];
+    rotateRByR(pose.R->data, transform.R->data, new_R);
+
+    apriltag_pose_t new_pos;
+    new_pos=*set_apriltag_pose(new_R, new_T);
+
+    return new_pos;
+}
+//MY TRY END
+
+//DONT DELETE:
 jstring
 Java_com_example_android_camerax_video_apriltag_00024Companion_stringFromJNI( JNIEnv* env, jobject thiz, jbyteArray pixelArray, jint width, jint height)
 {
+//    initialize_tag_field();
+//    // Example absolute pose
+//    double R_absolute_data[9] = {1, 0, 0, 0, 1, 0, 0, 0, 1};
+//    double t_absolute_data[3] = {1, 0, 0};
+//    apriltag_pose_t* absolute_pose = &tag_field[0];
+//
+//    // Example relative pose (transformation)
+//    double R_relative_data[9] = {0, -1, 0, 1, 0, 0, 0, 0, 1};
+//    double t_relative_data[3] = {1, 0, 0};
+//    apriltag_pose_t* relative_pose = &tag_field[1];
+//
+//    // Transform the absolute pose using the relative pose
+//    apriltag_pose_t transformed_pose = TransformBy(*absolute_pose, *relative_pose);
+//
+//    // Print the transformed pose
+//    double x[3];
+//    for (int i = 0; i < 3; ++i) {
+//        x[i] = transformed_pose.t->data[i];
+//    }
+//
+//    return 0;
+
+//    initialize_tag_field();
     image_u8_t *img = (image_u8_t *) pixel_array_to_uint_8_img(env, thiz, pixelArray, width, height);
 //    char* result = test_img(env, thiz, pixelArray, width, height, (jlong) img);
 

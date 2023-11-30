@@ -30,7 +30,7 @@
 cmake_minimum_required(VERSION 3.4.1)
 
 # Specifies the name of your library and its type (SHARED).
-add_library(ApriltagTower SHARED src/main/cpp/ApriltagTower.c)
+add_library(ApriltagTower SHARED src/main/cpp/ApriltagTower.c src/main/cpp/PoseMath.c)
 
 # Include the `apriltag` project as a library
 add_subdirectory(src/main/cpp/include)  # Replace with the actual path
@@ -42,6 +42,8 @@ target_link_libraries(ApriltagTower apriltag)  # 'apriltag' is the library name 
 target_include_directories(ApriltagTower PRIVATE
         "${CMAKE_BINARY_DIR}/src/main/cpp/include"  # Adjust the path
         "${CMAKE_BINARY_DIR}/src/main/cpp/include/common"  # Adjust the path
+        "${CMAKE_BINARY_DIR}/src/main/cpp"  # Add path to PoseMath.h
+
         )
 
 # Set other options and configurations if needed

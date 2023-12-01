@@ -96,12 +96,60 @@ static matd_t* addMatrices_Custom(const matd_t* A, const matd_t* B) {
 
     return result;
 }
+// Function to transpose a matrix
+static matd_t* transpose(const matd_t* A) {
+    matd_t* result = malloc(sizeof(matd_t) + A->nrows * A->ncols * sizeof(double));
+    result->nrows = A->ncols;
+    result->ncols = A->nrows;
 
-static apriltag_pose_t* calculateCameraPosition(apriltag_pose_t pose, const TagPose* tagPose) {
+    for (unsigned int i = 0; i < A->nrows; ++i) {
+        for (unsigned int j = 0; j < A->ncols; ++j) {
+            result->data[j * A->nrows + i] = A->data[i * A->ncols + j];
+        }
+    }
+
+    return result;
+}
+
+// Function to subtract two matrices
+static matd_t* subtractMatrices_Custom(const matd_t* A, const matd_t* B) {
+    if (A->nrows != B->nrows || A->ncols != B->ncols) {
+        fprintf(stderr, "Matrix dimensions do not match for subtraction\n");
+        return NULL;
+    }
+
+    matd_t* result = malloc(sizeof(matd_t) + A->nrows * A->ncols * sizeof(double));
+    result->nrows = A->nrows;
+    result->ncols = A->ncols;
+
+    for (unsigned int i = 0; i < A->nrows; ++i) {
+        for (unsigned int j = 0; j < A->ncols; ++j) {
+            result->data[i * A->ncols + j] = A->data[i * A->ncols + j] - B->data[i * A->ncols + j];
+        }
+    }
+
+    return result;
+}
+
+// Function to negate a matrix
+static matd_t* negateMatrix(const matd_t* A) {
+    matd_t* result = matd_create(A->nrows, A->ncols);
+
+    for (unsigned int i = 0; i < A->nrows; ++i) {
+        for (unsigned int j = 0; j < A->ncols; ++j) {
+            MATD_EL(result, i, j) = -MATD_EL(A, i, j);
+        }
+    }
+
+    return result;
+}
+
+static apriltag_pose_t* calculateCameraPosition(apriltag_pose_t pose, TagPose* tagPose) {
     // Convert Euler angles to radians
     double yaw = tagPose->tagYaw * M_PI / 180.0;
     double pitch = tagPose->tagPitch * M_PI / 180.0;
     double roll = tagPose->tagRoll * M_PI / 180.0;
+
     // Create rotation matrix for the tag
     matd_t* tagRotation = eulerToRotation(yaw, pitch, roll);
 
@@ -111,9 +159,16 @@ static apriltag_pose_t* calculateCameraPosition(apriltag_pose_t pose, const TagP
     // Combine rotation and translation matrices for the tag
     matd_t* tagTransform = addMatrices_Custom(tagRotation, tagTranslation);
 
-    // Combine camera pose and tag pose
-    matd_t* cameraRotation = multiplyMatrices_Custom(pose.R, tagRotation);
-    matd_t* cameraTranslation = addMatrices_Custom(pose.t, tagTranslation);
+    // Invert the pose transformation matrix (since pose represents the transformation from camera to tag)
+    matd_t* inversePoseRotation = transpose(pose.R);
+    matd_t* inversePoseTranslation = negateMatrix(pose.t);
+    inversePoseTranslation = multiplyMatrices_Custom(inversePoseRotation, inversePoseTranslation);
+    matd_t* rotatedInversePoseTranslation = multiplyMatrices_Custom(tagRotation, inversePoseTranslation);
+
+    // Combine inverted camera pose and tag pose
+    matd_t* cameraRotation = multiplyMatrices_Custom(inversePoseRotation, tagRotation);
+    matd_t* cameraTranslation = addMatrices_Custom(tagTranslation, rotatedInversePoseTranslation);
+
 
     pose.R = cameraRotation;
     pose.t = cameraTranslation;

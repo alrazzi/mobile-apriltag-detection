@@ -204,17 +204,35 @@ Java_com_example_android_camerax_video_apriltag_00024Companion_stringFromJNI( JN
 {
 //    // Example absolute pose
     // Example usage
-    double x8 = 1;
-    double R_data0[9] = {0.866, -0.5, 0.0,
-                         0.5, 0.866, 0.0,
-                         0.0, 0.0, 1.0};
+    double yaw = 90;
+    double pitch = 40;
+    double roll = 100;
+
+    roll = M_PI * roll / 180.0;
+    pitch = M_PI * pitch / 180.0;
+    yaw = M_PI * yaw / 180.0;
+
+    // Calculate rotation matrix based on yaw, pitch, and roll
+    double cosRoll = cos(roll);
+    double sinRoll = sin(roll);
+    double cosPitch = cos(pitch);
+    double sinPitch = sin(pitch);
+    double cosYaw = cos(yaw);
+    double sinYaw = sin(yaw);
+
+    double R_data0[9] = {
+            cosPitch * cosYaw, cosYaw * sinPitch * sinRoll - cosRoll * sinYaw, cosRoll * cosYaw * sinPitch + sinRoll * sinYaw,
+            cosPitch * sinYaw, cosRoll * cosYaw + sinPitch * sinRoll * sinYaw, cosYaw * sinRoll - cosRoll * sinPitch * sinYaw,
+            -sinPitch, cosPitch * sinRoll, cosRoll * cosPitch
+    };
+
 
 // Different translation vector
-    double t_data0[3] = {1.0, -2.0, 3.0};
+    double t_data0[3] = {32, 32, 12};
     apriltag_pose_t* cameraPose = createAprilTagPose(R_data0, t_data0);
 
     // Create a TagPose instance
-    TagPose tagPose = {0.5, -1.0, 2.0, 45.0, 30.0, -15.0};
+    TagPose tagPose = {15, 21, 33, 20, 0, 0};
 
     cameraPose = calculateCameraPosition(*cameraPose, &tagPose);
 
@@ -229,30 +247,30 @@ Java_com_example_android_camerax_video_apriltag_00024Companion_stringFromJNI( JN
     }
 
     return (*env)->NewStringUTF(env, "It works!");
-
-//    initialize_tag_field();
-    image_u8_t *img = (image_u8_t *) pixel_array_to_uint_8_img(env, thiz, pixelArray, width, height);
-//    char* result = test_img(env, thiz, pixelArray, width, height, (jlong) img);
-
-    apriltag_detector_t *td = apriltag_detector_create();
-    apriltag_family_t *tf = tag36h11_create();
-    apriltag_detector_add_family(td, tf);
-    zarray_t *detections = apriltag_detector_detect(td, img);
-
-    apriltag_detection_t* best_detection = get_best_detection(detections);
-    if(best_detection==NULL){
-        cleanup(td, tf, img);
-        return (*env)->NewStringUTF(env, "NO apriltags detected");
-    }
-    apriltag_pose_t pose = get_pose(best_detection);
-    int num_detections = zarray_size(detections);
-    int id = best_detection->id;
-    double yaw = get_yaw(pose);
-    double dist = get_dist(pose);
-
-    cleanup(td, tf, img);
-
-    char num_det_str[60];  // Assuming a maximum of 20 characters for the integer
-    snprintf(num_det_str, sizeof(num_det_str), "Id detected: %d; yaw: %.1f; dist: %.2f; # detections: %d", id, yaw, dist, num_detections);
-    return (*env)->NewStringUTF(env, num_det_str);
+//
+////    initialize_tag_field();
+//    image_u8_t *img = (image_u8_t *) pixel_array_to_uint_8_img(env, thiz, pixelArray, width, height);
+////    char* result = test_img(env, thiz, pixelArray, width, height, (jlong) img);
+//
+//    apriltag_detector_t *td = apriltag_detector_create();
+//    apriltag_family_t *tf = tag36h11_create();
+//    apriltag_detector_add_family(td, tf);
+//    zarray_t *detections = apriltag_detector_detect(td, img);
+//
+//    apriltag_detection_t* best_detection = get_best_detection(detections);
+//    if(best_detection==NULL){
+//        cleanup(td, tf, img);
+//        return (*env)->NewStringUTF(env, "NO apriltags detected");
+//    }
+//    apriltag_pose_t pose = get_pose(best_detection);
+//    int num_detections = zarray_size(detections);
+//    int id = best_detection->id;
+//    double yaw = get_yaw(pose);
+//    double dist = get_dist(pose);
+//
+//    cleanup(td, tf, img);
+//
+//    char num_det_str[60];  // Assuming a maximum of 20 characters for the integer
+//    snprintf(num_det_str, sizeof(num_det_str), "Id detected: %d; yaw: %.1f; dist: %.2f; # detections: %d", id, yaw, dist, num_detections);
+//    return (*env)->NewStringUTF(env, num_det_str);
 }

@@ -26,6 +26,6 @@ static matd_t* multiplyMatrices_Custom(const matd_t* A, const matd_t* B);
 static matd_t* addMatrices_Custom(const matd_t* A, const matd_t* B);
 
 // Function to calculate camera position based on tag pose
-static apriltag_pose_t* calculateCameraPosition(apriltag_pose_t pose, const TagPose* tagPose);
+static apriltag_pose_t* calculateCameraPosition(apriltag_pose_t pose, TagPose* tagPose);
 
 #endif // POSE_MATH_H

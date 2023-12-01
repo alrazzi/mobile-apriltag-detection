@@ -1,2 +1,8 @@
 ninja: Entering directory `C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\.cxx\Debug\6vk1im5o\x86_64'
-ninja: no work to do.
+[1/2] Building C object CMakeFiles/ApriltagTower.dir/src/main/cpp/ApriltagTower.c.o
+In file included from C:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/ApriltagTower.c:27:
+C:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/PoseMath.c:183:13: warning: address of stack memory associated with parameter 'pose' returned [-Wreturn-stack-address]
+    return &pose;
+            ^~~~
+1 warning generated.
+[2/2] Linking C shared library ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86_64\libApriltagTower.so

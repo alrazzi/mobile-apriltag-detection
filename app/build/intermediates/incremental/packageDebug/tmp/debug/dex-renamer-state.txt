@@ -1,4 +1,4 @@
-#Fri Nov 17 10:32:35 EST 2023
+#Thu Nov 30 19:20:05 EST 2023
 base.0=C\:\\Users\\alruz\\Documents\\Code\\Scrap\\Camera2Basic\\CameraXVideo\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\alruz\\Documents\\Code\\Scrap\\Camera2Basic\\CameraXVideo\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\9\\classes.dex
 base.2=C\:\\Users\\alruz\\Documents\\Code\\Scrap\\Camera2Basic\\CameraXVideo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex

@@ -1,9 +1,9 @@
 #ifndef POSE_MATH_H
 #define POSE_MATH_H
 
-// Include necessary headers if needed
+#include "include/apriltag_pose.h"
 
-// Define the TagPose struct
+// Structure to represent a pose of a tag
 typedef struct {
     double tagX;
     double tagY;
@@ -13,13 +13,19 @@ typedef struct {
     double tagRoll;
 } TagPose;
 
-// Function declarations
-TagPose createTagPose(double x, double y, double z, double yaw, double pitch, double roll);
-double getTagX(const TagPose* pose);
-double getTagY(const TagPose* pose);
-double getTagZ(const TagPose* pose);
-double getTagYaw(const TagPose* pose);
-double getTagPitch(const TagPose* pose);
-double getTagRoll(const TagPose* pose);
+// Function to create a rotation matrix from Euler angles
+static matd_t* eulerToRotation(double yaw, double pitch, double roll);
 
-#endif //POSE_MATH_H
+// Function to create a translation matrix
+static matd_t* createTranslation(double x, double y, double z);
+
+// Function to multiply two matrices
+static matd_t* multiplyMatrices_Custom(const matd_t* A, const matd_t* B);
+
+// Function to add two matrices
+static matd_t* addMatrices_Custom(const matd_t* A, const matd_t* B);
+
+// Function to calculate camera position based on tag pose
+static void calculateCameraPosition(const apriltag_pose_t* pose, const TagPose* tagPose);
+
+#endif // POSE_MATH_H

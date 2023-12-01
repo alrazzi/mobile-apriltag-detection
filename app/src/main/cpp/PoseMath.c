@@ -97,12 +97,11 @@ static matd_t* addMatrices_Custom(const matd_t* A, const matd_t* B) {
     return result;
 }
 
-static void calculateCameraPosition(const apriltag_pose_t* pose, const TagPose* tagPose) {
+static apriltag_pose_t* calculateCameraPosition(apriltag_pose_t pose, const TagPose* tagPose) {
     // Convert Euler angles to radians
     double yaw = tagPose->tagYaw * M_PI / 180.0;
     double pitch = tagPose->tagPitch * M_PI / 180.0;
     double roll = tagPose->tagRoll * M_PI / 180.0;
-
     // Create rotation matrix for the tag
     matd_t* tagRotation = eulerToRotation(yaw, pitch, roll);
 
@@ -113,8 +112,11 @@ static void calculateCameraPosition(const apriltag_pose_t* pose, const TagPose* 
     matd_t* tagTransform = addMatrices_Custom(tagRotation, tagTranslation);
 
     // Combine camera pose and tag pose
-    matd_t* cameraRotation = multiplyMatrices_Custom(pose->R, tagRotation);
-    matd_t* cameraTranslation = addMatrices_Custom(pose->t, tagTranslation);
+    matd_t* cameraRotation = multiplyMatrices_Custom(pose.R, tagRotation);
+    matd_t* cameraTranslation = addMatrices_Custom(pose.t, tagTranslation);
+
+    pose.R = cameraRotation;
+    pose.t = cameraTranslation;
 
     // Cleanup: Free allocated matrices
     free(tagRotation);
@@ -122,4 +124,6 @@ static void calculateCameraPosition(const apriltag_pose_t* pose, const TagPose* 
     free(tagTransform);
     free(cameraRotation);
     free(cameraTranslation);
+
+    return &pose;
 }

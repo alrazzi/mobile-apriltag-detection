@@ -188,14 +188,13 @@ double get_dist(apriltag_pose_t pose){
 }
 
 // Define a function to create and initialize an apriltag_pose_t instance
-apriltag_pose_t* createAprilTagPose() {
+apriltag_pose_t* createAprilTagPose(double R_data[9], double t_data[3]) {
     apriltag_pose_t* pose = malloc(sizeof(apriltag_pose_t));
 
     // Assuming matd_create_data initializes a matrix with the provided data
-    pose->R = matd_create_data(3, 3, NULL);  // Replace NULL with your actual R_data
-    pose->t = matd_create_data(3, 1, NULL);  // Replace NULL with your actual t_data
-    pose->R = matd_zeros(3, 3);
-    pose->t = matd_zeros(3, 1);
+    pose->R = matd_create_data(3, 3, R_data);
+    pose->t = matd_create_data(3, 1, t_data);
+
     return pose;
 }
 
@@ -206,29 +205,18 @@ Java_com_example_android_camerax_video_apriltag_00024Companion_stringFromJNI( JN
 //    // Example absolute pose
     // Example usage
     double x8 = 1;
-    apriltag_pose_t* cameraPose = createAprilTagPose();
-    // Initialize cameraPose with the actual camera pose
-    cameraPose->t->data[0] = 0.0;
-    cameraPose->t->data[1] = 0.0;
-    cameraPose->t->data[2] = 0.0;
+    double R_data0[9] = {0.866, -0.5, 0.0,
+                         0.5, 0.866, 0.0,
+                         0.0, 0.0, 1.0};
 
-    // Set rotation components to identity matrix
-    cameraPose->R->data[0] = 1.0;
-    cameraPose->R->data[1] = 0.0;
-    cameraPose->R->data[2] = 0.0;
-
-    cameraPose->R->data[3] = 0.0;
-    cameraPose->R->data[4] = 1.0;
-    cameraPose->R->data[5] = 0.0;
-
-    cameraPose->R->data[6] = 0.0;
-    cameraPose->R->data[7] = 0.0;
-    cameraPose->R->data[8] = 1.0;
+// Different translation vector
+    double t_data0[3] = {1.0, -2.0, 3.0};
+    apriltag_pose_t* cameraPose = createAprilTagPose(R_data0, t_data0);
 
     // Create a TagPose instance
-    TagPose tagPose = {1.0, 2.0, 3.0, 90.0, 0.0, 0.0};
+    TagPose tagPose = {0.5, -1.0, 2.0, 45.0, 30.0, -15.0};
 
-    calculateCameraPosition(&cameraPose, &tagPose);
+    cameraPose = calculateCameraPosition(*cameraPose, &tagPose);
 
     // Print the transformed pose
     double x[3];
@@ -240,7 +228,7 @@ Java_com_example_android_camerax_video_apriltag_00024Companion_stringFromJNI( JN
         y[i*3+2] = cameraPose->R->data[i*3+2];
     }
 
-    return 0;
+    return (*env)->NewStringUTF(env, "It works!");
 
 //    initialize_tag_field();
     image_u8_t *img = (image_u8_t *) pixel_array_to_uint_8_img(env, thiz, pixelArray, width, height);

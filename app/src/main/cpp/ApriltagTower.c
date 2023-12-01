@@ -187,30 +187,43 @@ double get_dist(apriltag_pose_t pose){
     return dist;
 }
 
+// Define a function to create and initialize an apriltag_pose_t instance
+apriltag_pose_t* createAprilTagPose() {
+    apriltag_pose_t* pose = malloc(sizeof(apriltag_pose_t));
+
+    // Assuming matd_create_data initializes a matrix with the provided data
+    pose->R = matd_create_data(3, 3, NULL);  // Replace NULL with your actual R_data
+    pose->t = matd_create_data(3, 1, NULL);  // Replace NULL with your actual t_data
+    pose->R = matd_zeros(3, 3);
+    pose->t = matd_zeros(3, 1);
+    return pose;
+}
+
 //DONT DELETE:
 jstring
 Java_com_example_android_camerax_video_apriltag_00024Companion_stringFromJNI( JNIEnv* env, jobject thiz, jbyteArray pixelArray, jint width, jint height)
 {
 //    // Example absolute pose
     // Example usage
-    apriltag_pose_t cameraPose;
+    double x8 = 1;
+    apriltag_pose_t* cameraPose = createAprilTagPose();
     // Initialize cameraPose with the actual camera pose
-    cameraPose.t->data[0] = 0.0;
-    cameraPose.t->data[1] = 0.0;
-    cameraPose.t->data[2] = 0.0;
+    cameraPose->t->data[0] = 0.0;
+    cameraPose->t->data[1] = 0.0;
+    cameraPose->t->data[2] = 0.0;
 
     // Set rotation components to identity matrix
-    cameraPose.R->data[0] = 1.0;
-    cameraPose.R->data[1] = 0.0;
-    cameraPose.R->data[2] = 0.0;
+    cameraPose->R->data[0] = 1.0;
+    cameraPose->R->data[1] = 0.0;
+    cameraPose->R->data[2] = 0.0;
 
-    cameraPose.R->data[3] = 0.0;
-    cameraPose.R->data[4] = 1.0;
-    cameraPose.R->data[5] = 0.0;
+    cameraPose->R->data[3] = 0.0;
+    cameraPose->R->data[4] = 1.0;
+    cameraPose->R->data[5] = 0.0;
 
-    cameraPose.R->data[6] = 0.0;
-    cameraPose.R->data[7] = 0.0;
-    cameraPose.R->data[8] = 1.0;
+    cameraPose->R->data[6] = 0.0;
+    cameraPose->R->data[7] = 0.0;
+    cameraPose->R->data[8] = 1.0;
 
     // Create a TagPose instance
     TagPose tagPose = {1.0, 2.0, 3.0, 90.0, 0.0, 0.0};
@@ -221,10 +234,10 @@ Java_com_example_android_camerax_video_apriltag_00024Companion_stringFromJNI( JN
     double x[3];
     double y[9];
     for (int i = 0; i < 3; ++i) {
-        x[i] = cameraPose.t->data[i];
-        y[i*3] = cameraPose.R->data[i*3];
-        y[i*3+1] = cameraPose.R->data[i*3+1];
-        y[i*3+2] = cameraPose.R->data[i*3+2];
+        x[i] = cameraPose->t->data[i];
+        y[i*3] = cameraPose->R->data[i*3];
+        y[i*3+1] = cameraPose->R->data[i*3+1];
+        y[i*3+2] = cameraPose->R->data[i*3+2];
     }
 
     return 0;

@@ -74,6 +74,11 @@ android {
 }
 
 dependencies {
+//    implementation files('libs/allwpilib.jar')
+//    implementation files('libs/wpimath.jar')
+//    implementation files('libs/wpiutil.jar')
+    implementation files('libs/wpimath-java-2023.4.3.jar')
+    implementation("org.ejml:simple:0.30")
     implementation project(path: ':utils')
 
     // Kotlin lang

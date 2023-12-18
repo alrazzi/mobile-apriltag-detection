@@ -5,6 +5,6 @@ class apriltag {
         init {
             System.loadLibrary("ApriltagTower")
         }
-        open external fun stringFromJNI(imageData: Array<IntArray>, width: Int, height: Int): String
+        open external fun getApriltagResult(imageData: Array<IntArray>, width: Int, height: Int): Result
     }
 }

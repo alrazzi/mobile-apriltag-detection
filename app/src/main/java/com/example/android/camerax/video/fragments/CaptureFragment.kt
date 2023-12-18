@@ -61,6 +61,8 @@ import com.example.android.camerax.video.databinding.FragmentCaptureBinding
 import com.example.android.camerax.video.extensions.getAspectRatio
 import com.example.android.camerax.video.extensions.getAspectRatioString
 import com.example.android.camerax.video.extensions.getNameString
+import edu.wpi.first.math.geometry.Pose3d
+import edu.wpi.first.math.geometry.Transform3d
 import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
@@ -117,12 +119,30 @@ class CaptureFragment : Fragment() {
             //Log.d("Analysis", "Image height: " + image.height)
             val pixelArray = imageToPixelArray(image.image!!)
 //            imageDiagnostics(image)
-            Log.d("Analysis", apriltag.stringFromJNI(pixelArray, image.width, image.height))
+//            Log.d("Analysis", apriltag.stringFromJNI(pixelArray, image.width, image.height))
 //            val imageAsString = imageToByteArray(image).joinToString { byte->byte.toString() }
 //            Log.d("Analysis", imageAsString)
+            var result = apriltag.getApriltagResult(pixelArray, image.width, image.height);
+            if(result.isTagDetected){
+                var camToTarget = result.camToTargetPacket?.getTransform3d();
+                var x = camToTarget?.getX();
+                var y = camToTarget?.getY();
+                var z = camToTarget?.getZ();
+                var yaw = camToTarget?.getRotation()?.getZ()?.times((180.0/Math.PI));
+                var pitch = camToTarget?.getRotation()?.getY()?.times((180.0/Math.PI));
+                var roll = camToTarget?.getRotation()?.getX()?.times((180.0/Math.PI));
+
+                var camPose = camToTarget?.let { calcCamPose(it, Pose3d()) };
+            }
             image.close()
         }
         return imageAnalysis
+    }
+
+    private fun calcCamPose(camToTarget: Transform3d, targetPose: Pose3d): Pose3d{
+        var targetToCam = camToTarget.inverse();
+        var camPose = targetPose.transformBy(targetToCam);
+        return camPose;
     }
 
     @SuppressLint("UnsafeOptInUsageError")

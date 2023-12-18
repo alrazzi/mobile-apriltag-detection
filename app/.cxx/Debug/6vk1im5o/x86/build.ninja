@@ -56,8 +56,6 @@ build CMakeFiles/ApriltagTower.dir/src/main/cpp/ApriltagTower.c.o: C_COMPILER__A
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/.cxx/Debug/6vk1im5o/x86/src/main/cpp/include -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/.cxx/Debug/6vk1im5o/x86/src/main/cpp/include/common -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/.cxx/Debug/6vk1im5o/x86/src/main/cpp -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = CMakeFiles\ApriltagTower.dir
   OBJECT_FILE_DIR = CMakeFiles\ApriltagTower.dir\src\main\cpp
-  TARGET_COMPILE_PDB = CMakeFiles\ApriltagTower.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libApriltagTower.pdb
 
 build CMakeFiles/ApriltagTower.dir/src/main/cpp/PoseMath.c.o: C_COMPILER__ApriltagTower_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/PoseMath.c || cmake_object_order_depends_target_ApriltagTower
   DEFINES = -DApriltagTower_EXPORTS
@@ -66,8 +64,6 @@ build CMakeFiles/ApriltagTower.dir/src/main/cpp/PoseMath.c.o: C_COMPILER__Aprilt
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/.cxx/Debug/6vk1im5o/x86/src/main/cpp/include -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/.cxx/Debug/6vk1im5o/x86/src/main/cpp/include/common -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/.cxx/Debug/6vk1im5o/x86/src/main/cpp -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = CMakeFiles\ApriltagTower.dir
   OBJECT_FILE_DIR = CMakeFiles\ApriltagTower.dir\src\main\cpp
-  TARGET_COMPILE_PDB = CMakeFiles\ApriltagTower.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libApriltagTower.pdb
 
 
 # =============================================================================
@@ -86,9 +82,8 @@ build ../../../../build/intermediates/cxx/Debug/6vk1im5o/obj/x86/libApriltagTowe
   PRE_LINK = cd .
   SONAME = libApriltagTower.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_COMPILE_PDB = CMakeFiles\ApriltagTower.dir\
   TARGET_FILE = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libApriltagTower.so
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libApriltagTower.pdb
+  TARGET_PDB = ApriltagTower.so.dbg
 
 
 #############################################
@@ -176,8 +171,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/apriltag.c.o: C_COMPILER__apr
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/apriltag_pose.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/apriltag_pose.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -186,8 +179,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/apriltag_pose.c.o: C_COMPILER
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/apriltag_quad_thresh.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/apriltag_quad_thresh.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -196,8 +187,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/apriltag_quad_thresh.c.o: C_C
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/common/g2d.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/common/g2d.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -206,8 +195,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/common/g2d.c.o: C_COMPILER__a
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir\common
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/common/getopt.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/common/getopt.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -216,8 +203,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/common/getopt.c.o: C_COMPILER
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir\common
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/common/homography.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/common/homography.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -226,8 +211,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/common/homography.c.o: C_COMP
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir\common
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/common/image_u8.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/common/image_u8.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -236,8 +219,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/common/image_u8.c.o: C_COMPIL
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir\common
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/common/image_u8x3.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/common/image_u8x3.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -246,8 +227,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/common/image_u8x3.c.o: C_COMP
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir\common
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/common/image_u8x4.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/common/image_u8x4.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -256,8 +235,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/common/image_u8x4.c.o: C_COMP
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir\common
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/common/matd.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/common/matd.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -266,8 +243,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/common/matd.c.o: C_COMPILER__
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir\common
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/common/pam.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/common/pam.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -276,8 +251,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/common/pam.c.o: C_COMPILER__a
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir\common
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/common/pjpeg-idct.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/common/pjpeg-idct.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -286,8 +259,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/common/pjpeg-idct.c.o: C_COMP
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir\common
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/common/pjpeg.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/common/pjpeg.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -296,8 +267,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/common/pjpeg.c.o: C_COMPILER_
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir\common
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/common/pnm.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/common/pnm.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -306,8 +275,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/common/pnm.c.o: C_COMPILER__a
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir\common
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/common/pthreads_cross.cpp.o: CXX_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/common/pthreads_cross.cpp || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -316,8 +283,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/common/pthreads_cross.cpp.o: 
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir\common
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/common/string_util.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/common/string_util.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -326,8 +291,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/common/string_util.c.o: C_COM
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir\common
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/common/svd22.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/common/svd22.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -336,8 +299,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/common/svd22.c.o: C_COMPILER_
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir\common
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/common/time_util.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/common/time_util.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -346,8 +307,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/common/time_util.c.o: C_COMPI
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir\common
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/common/unionfind.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/common/unionfind.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -356,8 +315,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/common/unionfind.c.o: C_COMPI
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir\common
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/common/workerpool.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/common/workerpool.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -366,8 +323,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/common/workerpool.c.o: C_COMP
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir\common
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/common/zarray.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/common/zarray.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -376,8 +331,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/common/zarray.c.o: C_COMPILER
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir\common
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/common/zhash.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/common/zhash.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -386,8 +339,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/common/zhash.c.o: C_COMPILER_
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir\common
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/common/zmaxheap.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/common/zmaxheap.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -396,8 +347,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/common/zmaxheap.c.o: C_COMPIL
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir\common
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/tag16h5.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/tag16h5.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -406,8 +355,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/tag16h5.c.o: C_COMPILER__apri
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/tag25h9.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/tag25h9.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -416,8 +363,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/tag25h9.c.o: C_COMPILER__apri
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/tag36h10.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/tag36h10.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -426,8 +371,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/tag36h10.c.o: C_COMPILER__apr
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/tag36h11.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/tag36h11.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -436,8 +379,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/tag36h11.c.o: C_COMPILER__apr
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/tagCircle21h7.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/tagCircle21h7.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -446,8 +387,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/tagCircle21h7.c.o: C_COMPILER
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/tagCircle49h12.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/tagCircle49h12.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -456,8 +395,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/tagCircle49h12.c.o: C_COMPILE
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/tagCustom48h12.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/tagCustom48h12.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -466,8 +403,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/tagCustom48h12.c.o: C_COMPILE
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/tagStandard41h12.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/tagStandard41h12.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -476,8 +411,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/tagStandard41h12.c.o: C_COMPI
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 build src/main/cpp/include/CMakeFiles/apriltag.dir/tagStandard52h13.c.o: C_COMPILER__apriltag_Debug C$:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include/tagStandard52h13.c || cmake_object_order_depends_target_apriltag
   DEFINES = -Dapriltag_EXPORTS
@@ -486,8 +419,6 @@ build src/main/cpp/include/CMakeFiles/apriltag.dir/tagStandard52h13.c.o: C_COMPI
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag.dir
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
 
 
 # =============================================================================
@@ -506,9 +437,8 @@ build ../../../../build/intermediates/cxx/Debug/6vk1im5o/obj/x86/libapriltagd.so
   PRE_LINK = cd .
   SONAME = libapriltagd.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag.dir\
   TARGET_FILE = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.so
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\libapriltagd.pdb
+  TARGET_PDB = apriltagd.so.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target apriltag_demo
@@ -525,8 +455,6 @@ build src/main/cpp/include/CMakeFiles/apriltag_demo.dir/example/apriltag_demo.c.
   INCLUDES = -IC:/Users/alruz/Documents/Code/Scrap/Camera2Basic/CameraXVideo/app/src/main/cpp/include -I/apriltag
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag_demo.dir
   OBJECT_FILE_DIR = src\main\cpp\include\CMakeFiles\apriltag_demo.dir\example
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag_demo.dir\
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\apriltag_demo.pdb
 
 
 # =============================================================================
@@ -543,9 +471,8 @@ build ../../../../build/intermediates/cxx/Debug/6vk1im5o/obj/x86/apriltag_demo: 
   OBJECT_DIR = src\main\cpp\include\CMakeFiles\apriltag_demo.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = src\main\cpp\include\CMakeFiles\apriltag_demo.dir\
   TARGET_FILE = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\apriltag_demo
-  TARGET_PDB = ..\..\..\..\build\intermediates\cxx\Debug\6vk1im5o\obj\x86\apriltag_demo.pdb
+  TARGET_PDB = apriltag_demo.dbg
 
 
 #############################################
@@ -649,14 +576,14 @@ build src/main/cpp/include/all: phony ../../../../build/intermediates/cxx/Debug/
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../../../../CMakeLists.txt ../../../../src/main/cpp/include/CMakeLists.txt ../../../../src/main/cpp/include/CMake/apriltagConfig.cmake.in ../../../../src/main/cpp/include/apriltag.pc.in C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCCompilerABI.c C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCInformation.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCXXInformation.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDependentOption.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeFindFrameworks.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeGenericSystem.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeSystem.cmake.in C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckForPthreads.c C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckFunctionExists.c C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckIncludeFile.c.in C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckIncludeFile.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckLibraryExists.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-C.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-FindBinUtils.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/GNU.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/FindPackageMessage.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/FindPythonLibs.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/FindThreads.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/GNUInstallDirs.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang-C.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang-CXX.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Common.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Determine-C.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Determine-CXX.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Determine.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Initialize.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android/Determine-Compiler-NDK.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android/Determine-Compiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Linux.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/UnixPaths.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/SelectLibraryConfigurations.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/abis.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/adjust_api_level.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/flags.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/post/Android-Clang.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/post/Android-Determine.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/post/Android.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/post/Determine-Compiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/pre/Android-Clang.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/pre/Android-Determine.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/pre/Android-Initialize.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/pre/Android.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/pre/Determine-Compiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/platforms.cmake CMakeCache.txt CMakeFiles/3.22.1-g37088a8-dirty/CMakeCCompiler.cmake CMakeFiles/3.22.1-g37088a8-dirty/CMakeCXXCompiler.cmake CMakeFiles/3.22.1-g37088a8-dirty/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../../../../CMakeLists.txt ../../../../src/main/cpp/include/CMakeLists.txt ../../../../src/main/cpp/include/CMake/apriltagConfig.cmake.in ../../../../src/main/cpp/include/apriltag.pc.in C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCInformation.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCXXInformation.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDependentOption.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeFindFrameworks.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeGenericSystem.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckIncludeFile.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckLibraryExists.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-C.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/GNU.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/FindPackageMessage.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/FindPythonLibs.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/FindThreads.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/GNUInstallDirs.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang-C.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang-CXX.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Common.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Initialize.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Linux.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/UnixPaths.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/SelectLibraryConfigurations.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/adjust_api_level.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/flags.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/post/Android-Clang.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/post/Android.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/pre/Android-Clang.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/pre/Android-Initialize.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/pre/Android.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/platforms.cmake CMakeCache.txt CMakeFiles/3.22.1-g37088a8-dirty/CMakeCCompiler.cmake CMakeFiles/3.22.1-g37088a8-dirty/CMakeCXXCompiler.cmake CMakeFiles/3.22.1-g37088a8-dirty/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../../../../CMakeLists.txt ../../../../src/main/cpp/include/CMakeLists.txt ../../../../src/main/cpp/include/CMake/apriltagConfig.cmake.in ../../../../src/main/cpp/include/apriltag.pc.in C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCCompilerABI.c C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCInformation.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCXXInformation.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDependentOption.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeFindFrameworks.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeGenericSystem.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeSystem.cmake.in C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckForPthreads.c C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckFunctionExists.c C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckIncludeFile.c.in C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckIncludeFile.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckLibraryExists.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-C.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-FindBinUtils.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/GNU.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/FindPackageMessage.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/FindPythonLibs.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/FindThreads.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/GNUInstallDirs.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang-C.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang-CXX.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Common.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Determine-C.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Determine-CXX.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Determine.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Initialize.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android/Determine-Compiler-NDK.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android/Determine-Compiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Linux.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/UnixPaths.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/SelectLibraryConfigurations.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/abis.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/adjust_api_level.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/flags.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/post/Android-Clang.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/post/Android-Determine.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/post/Android.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/post/Determine-Compiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/pre/Android-Clang.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/pre/Android-Determine.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/pre/Android-Initialize.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/pre/Android.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/pre/Determine-Compiler.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/platforms.cmake CMakeCache.txt CMakeFiles/3.22.1-g37088a8-dirty/CMakeCCompiler.cmake CMakeFiles/3.22.1-g37088a8-dirty/CMakeCXXCompiler.cmake CMakeFiles/3.22.1-g37088a8-dirty/CMakeSystem.cmake: phony
+build ../../../../CMakeLists.txt ../../../../src/main/cpp/include/CMakeLists.txt ../../../../src/main/cpp/include/CMake/apriltagConfig.cmake.in ../../../../src/main/cpp/include/apriltag.pc.in C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCInformation.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCXXInformation.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDependentOption.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeFindFrameworks.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeGenericSystem.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckIncludeFile.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckLibraryExists.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-C.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/GNU.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/FindPackageMessage.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/FindPythonLibs.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/FindThreads.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/GNUInstallDirs.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang-C.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang-CXX.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Common.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Initialize.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Linux.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/UnixPaths.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/SelectLibraryConfigurations.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/adjust_api_level.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/flags.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/post/Android-Clang.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/post/Android.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/pre/Android-Clang.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/pre/Android-Initialize.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/hooks/pre/Android.cmake C$:/Users/alruz/AppData/Local/Android/Sdk/ndk/23.1.7779620/build/cmake/platforms.cmake CMakeCache.txt CMakeFiles/3.22.1-g37088a8-dirty/CMakeCCompiler.cmake CMakeFiles/3.22.1-g37088a8-dirty/CMakeCXXCompiler.cmake CMakeFiles/3.22.1-g37088a8-dirty/CMakeSystem.cmake: phony
 
 
 #############################################

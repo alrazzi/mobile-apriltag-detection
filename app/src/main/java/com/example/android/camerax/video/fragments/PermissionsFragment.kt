@@ -35,8 +35,13 @@ import com.example.android.camerax.video.R
 import com.example.android.camerax.video.databinding.FragmentPermissionBinding
 
 private var PERMISSIONS_REQUIRED = arrayOf(
-    Manifest.permission.CAMERA,
-    Manifest.permission.RECORD_AUDIO)
+        Manifest.permission.CAMERA,
+        Manifest.permission.RECORD_AUDIO,
+//        Manifest.permission.BLUETOOTH,
+//        Manifest.permission.ACCESS_BACKGROUND_LOCATION,
+
+
+)
 
 /**
  * This [Fragment] requests permissions and, once granted, it will navigate to the next fragment

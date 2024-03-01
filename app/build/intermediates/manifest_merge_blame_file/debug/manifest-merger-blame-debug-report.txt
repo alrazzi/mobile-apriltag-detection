@@ -21,135 +21,140 @@
 21
 22    <uses-sdk
 23        android:minSdkVersion="21"
-23-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml
+23-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml
 24        android:targetSdkVersion="31" />
-24-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml
+24-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml
 25
 26    <!-- Permission declarations -->
-27    <uses-permission android:name="android.permission.CAMERA" />
-27-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:22:5-65
-27-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:22:22-62
-28    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-28-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:23:5-71
-28-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:23:22-68
-29    <uses-permission
-29-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:24:5-25:38
-30        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-30-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:24:22-78
-31        android:maxSdkVersion="28" />
-31-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:25:9-35
-32
-33    <!-- A camera with burst capability is required to use this application -->
-34    <uses-feature android:name="android.hardware.camera.any" />
-34-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:28:5-64
-34-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:28:19-61
-35
-36    <application
-36-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:30:5-62:19
-37        android:name="com.example.android.camerax.video.MainApplication"
-37-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:31:9-40
-38        android:allowBackup="true"
-38-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:32:9-35
-39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-39-->[androidx.core:core:1.7.0] C:\Users\alruz\.gradle\caches\transforms-3\29af6113121a23886b71526c7a9f1544\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
-40        android:debuggable="true"
-41        android:icon="@drawable/ic_launcher"
-41-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:34:9-45
-42        android:label="@string/app_name"
-42-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:33:9-41
-43        android:testOnly="true" >
-44        <activity
-44-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:37:9-49:20
-45            android:name="com.example.android.camerax.video.MainActivity"
-45-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:38:13-74
-46            android:clearTaskOnLaunch="true"
-46-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:39:13-45
-47            android:exported="true"
-47-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:41:13-36
-48            android:theme="@style/AppTheme" >
-48-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:40:13-44
-49
-50            <!-- Main app intent filter -->
-51            <intent-filter>
-51-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:44:13-47:29
-52                <action android:name="android.intent.action.MAIN" />
-52-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:45:17-69
-52-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:45:25-66
-53
-54                <category android:name="android.intent.category.LAUNCHER" />
-54-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:46:17-77
-54-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:46:27-74
-55            </intent-filter>
-56        </activity>
-57
-58        <!-- FileProvider used to share media with other apps -->
-59        <provider
-60            android:name="androidx.core.content.FileProvider"
-60-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:53:13-62
-61            android:authorities="com.android.example.camerax.video.provider"
-61-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:54:13-60
-62            android:exported="false"
-62-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:55:13-37
-63            android:grantUriPermissions="true" >
-63-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:56:13-47
-64            <meta-data
-64-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:57:13-59:53
-65                android:name="android.support.FILE_PROVIDER_PATHS"
-65-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:58:17-67
-66                android:resource="@xml/file_paths" />
-66-->C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:59:17-51
-67        </provider>
-68
-69        <uses-library
-69-->[androidx.window:window:1.0.0-rc01] C:\Users\alruz\.gradle\caches\transforms-3\04b50b440cf8c12df80a21a5cbf9edc9\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:25:9-27:40
-70            android:name="androidx.window.extensions"
-70-->[androidx.window:window:1.0.0-rc01] C:\Users\alruz\.gradle\caches\transforms-3\04b50b440cf8c12df80a21a5cbf9edc9\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:26:13-54
-71            android:required="false" />
-71-->[androidx.window:window:1.0.0-rc01] C:\Users\alruz\.gradle\caches\transforms-3\04b50b440cf8c12df80a21a5cbf9edc9\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:27:13-37
-72        <uses-library
-72-->[androidx.window:window:1.0.0-rc01] C:\Users\alruz\.gradle\caches\transforms-3\04b50b440cf8c12df80a21a5cbf9edc9\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:28:9-30:40
-73            android:name="androidx.window.sidecar"
-73-->[androidx.window:window:1.0.0-rc01] C:\Users\alruz\.gradle\caches\transforms-3\04b50b440cf8c12df80a21a5cbf9edc9\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:29:13-51
-74            android:required="false" />
-74-->[androidx.window:window:1.0.0-rc01] C:\Users\alruz\.gradle\caches\transforms-3\04b50b440cf8c12df80a21a5cbf9edc9\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:30:13-37
-75
-76        <service
-76-->[androidx.camera:camera-camera2:1.1.0-beta01] C:\Users\alruz\.gradle\caches\transforms-3\db5e5df2bf71db2b9b9666cb10ebcf4e\transformed\jetified-camera-camera2-1.1.0-beta01\AndroidManifest.xml:26:9-35:19
-77            android:name="androidx.camera.core.impl.MetadataHolderService"
-77-->[androidx.camera:camera-camera2:1.1.0-beta01] C:\Users\alruz\.gradle\caches\transforms-3\db5e5df2bf71db2b9b9666cb10ebcf4e\transformed\jetified-camera-camera2-1.1.0-beta01\AndroidManifest.xml:27:13-75
-78            android:enabled="false"
-78-->[androidx.camera:camera-camera2:1.1.0-beta01] C:\Users\alruz\.gradle\caches\transforms-3\db5e5df2bf71db2b9b9666cb10ebcf4e\transformed\jetified-camera-camera2-1.1.0-beta01\AndroidManifest.xml:28:13-36
-79            android:exported="false" >
-79-->[androidx.camera:camera-camera2:1.1.0-beta01] C:\Users\alruz\.gradle\caches\transforms-3\db5e5df2bf71db2b9b9666cb10ebcf4e\transformed\jetified-camera-camera2-1.1.0-beta01\AndroidManifest.xml:29:13-37
-80            <meta-data
-80-->[androidx.camera:camera-camera2:1.1.0-beta01] C:\Users\alruz\.gradle\caches\transforms-3\db5e5df2bf71db2b9b9666cb10ebcf4e\transformed\jetified-camera-camera2-1.1.0-beta01\AndroidManifest.xml:32:13-34:89
-81                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
-81-->[androidx.camera:camera-camera2:1.1.0-beta01] C:\Users\alruz\.gradle\caches\transforms-3\db5e5df2bf71db2b9b9666cb10ebcf4e\transformed\jetified-camera-camera2-1.1.0-beta01\AndroidManifest.xml:33:17-103
-82                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
-82-->[androidx.camera:camera-camera2:1.1.0-beta01] C:\Users\alruz\.gradle\caches\transforms-3\db5e5df2bf71db2b9b9666cb10ebcf4e\transformed\jetified-camera-camera2-1.1.0-beta01\AndroidManifest.xml:34:17-86
-83        </service>
-84
-85        <provider
-85-->[androidx.emoji2:emoji2:1.0.0] C:\Users\alruz\.gradle\caches\transforms-3\70401492c3ac22033204f3a60cb4ddc1\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-86            android:name="androidx.startup.InitializationProvider"
-86-->[androidx.emoji2:emoji2:1.0.0] C:\Users\alruz\.gradle\caches\transforms-3\70401492c3ac22033204f3a60cb4ddc1\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-87            android:authorities="com.android.example.camerax.video.androidx-startup"
-87-->[androidx.emoji2:emoji2:1.0.0] C:\Users\alruz\.gradle\caches\transforms-3\70401492c3ac22033204f3a60cb4ddc1\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
-88            android:exported="false" >
-88-->[androidx.emoji2:emoji2:1.0.0] C:\Users\alruz\.gradle\caches\transforms-3\70401492c3ac22033204f3a60cb4ddc1\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
-89            <meta-data
-89-->[androidx.emoji2:emoji2:1.0.0] C:\Users\alruz\.gradle\caches\transforms-3\70401492c3ac22033204f3a60cb4ddc1\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-90                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-90-->[androidx.emoji2:emoji2:1.0.0] C:\Users\alruz\.gradle\caches\transforms-3\70401492c3ac22033204f3a60cb4ddc1\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
-91                android:value="androidx.startup" />
-91-->[androidx.emoji2:emoji2:1.0.0] C:\Users\alruz\.gradle\caches\transforms-3\70401492c3ac22033204f3a60cb4ddc1\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
-92            <meta-data
-92-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\alruz\.gradle\caches\transforms-3\92695b0ae1d8d5c604b2f507dc67bde2\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-93                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-93-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\alruz\.gradle\caches\transforms-3\92695b0ae1d8d5c604b2f507dc67bde2\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-94                android:value="androidx.startup" />
-94-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\alruz\.gradle\caches\transforms-3\92695b0ae1d8d5c604b2f507dc67bde2\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-95        </provider>
-96    </application>
-97
-98</manifest>
+27    <!-- <uses-feature android:name="android.hardware.bluetooth" /> -->
+28    <!-- <uses-permission android:name="android.permission.BLUETOOTH" /> -->
+29    <!-- <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> -->
+30    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+31    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+32    <uses-permission android:name="android.permission.CAMERA" />
+32-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:27:5-65
+32-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:27:22-62
+33    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+33-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:28:5-71
+33-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:28:22-68
+34    <uses-permission
+34-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:29:5-30:38
+35        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+35-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:29:22-78
+36        android:maxSdkVersion="28" />
+36-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:30:9-35
+37
+38    <!-- A camera with burst capability is required to use this application -->
+39    <uses-feature android:name="android.hardware.camera.any" />
+39-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:33:5-64
+39-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:33:19-61
+40
+41    <application
+41-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:35:5-67:19
+42        android:name="com.example.android.camerax.video.MainApplication"
+42-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:36:9-40
+43        android:allowBackup="true"
+43-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:37:9-35
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.7.0] C:\Users\alruz\.gradle\caches\transforms-3\29af6113121a23886b71526c7a9f1544\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+45        android:debuggable="true"
+46        android:icon="@drawable/ic_launcher"
+46-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:39:9-45
+47        android:label="@string/app_name"
+47-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:38:9-41
+48        android:testOnly="true" >
+49        <activity
+49-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:42:9-54:20
+50            android:name="com.example.android.camerax.video.MainActivity"
+50-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:43:13-74
+51            android:clearTaskOnLaunch="true"
+51-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:44:13-45
+52            android:exported="true"
+52-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:46:13-36
+53            android:theme="@style/AppTheme" >
+53-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:45:13-44
+54
+55            <!-- Main app intent filter -->
+56            <intent-filter>
+56-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:49:13-52:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:50:17-69
+57-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:50:25-66
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:51:17-77
+59-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:51:27-74
+60            </intent-filter>
+61        </activity>
+62
+63        <!-- FileProvider used to share media with other apps -->
+64        <provider
+65            android:name="androidx.core.content.FileProvider"
+65-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:58:13-62
+66            android:authorities="com.android.example.camerax.video.provider"
+66-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:59:13-60
+67            android:exported="false"
+67-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:60:13-37
+68            android:grantUriPermissions="true" >
+68-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:61:13-47
+69            <meta-data
+69-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:62:13-64:53
+70                android:name="android.support.FILE_PROVIDER_PATHS"
+70-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:63:17-67
+71                android:resource="@xml/file_paths" />
+71-->C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:64:17-51
+72        </provider>
+73
+74        <uses-library
+74-->[androidx.window:window:1.0.0-rc01] C:\Users\alruz\.gradle\caches\transforms-3\04b50b440cf8c12df80a21a5cbf9edc9\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:25:9-27:40
+75            android:name="androidx.window.extensions"
+75-->[androidx.window:window:1.0.0-rc01] C:\Users\alruz\.gradle\caches\transforms-3\04b50b440cf8c12df80a21a5cbf9edc9\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:26:13-54
+76            android:required="false" />
+76-->[androidx.window:window:1.0.0-rc01] C:\Users\alruz\.gradle\caches\transforms-3\04b50b440cf8c12df80a21a5cbf9edc9\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:27:13-37
+77        <uses-library
+77-->[androidx.window:window:1.0.0-rc01] C:\Users\alruz\.gradle\caches\transforms-3\04b50b440cf8c12df80a21a5cbf9edc9\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:28:9-30:40
+78            android:name="androidx.window.sidecar"
+78-->[androidx.window:window:1.0.0-rc01] C:\Users\alruz\.gradle\caches\transforms-3\04b50b440cf8c12df80a21a5cbf9edc9\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:29:13-51
+79            android:required="false" />
+79-->[androidx.window:window:1.0.0-rc01] C:\Users\alruz\.gradle\caches\transforms-3\04b50b440cf8c12df80a21a5cbf9edc9\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:30:13-37
+80
+81        <service
+81-->[androidx.camera:camera-camera2:1.1.0-beta01] C:\Users\alruz\.gradle\caches\transforms-3\db5e5df2bf71db2b9b9666cb10ebcf4e\transformed\jetified-camera-camera2-1.1.0-beta01\AndroidManifest.xml:26:9-35:19
+82            android:name="androidx.camera.core.impl.MetadataHolderService"
+82-->[androidx.camera:camera-camera2:1.1.0-beta01] C:\Users\alruz\.gradle\caches\transforms-3\db5e5df2bf71db2b9b9666cb10ebcf4e\transformed\jetified-camera-camera2-1.1.0-beta01\AndroidManifest.xml:27:13-75
+83            android:enabled="false"
+83-->[androidx.camera:camera-camera2:1.1.0-beta01] C:\Users\alruz\.gradle\caches\transforms-3\db5e5df2bf71db2b9b9666cb10ebcf4e\transformed\jetified-camera-camera2-1.1.0-beta01\AndroidManifest.xml:28:13-36
+84            android:exported="false" >
+84-->[androidx.camera:camera-camera2:1.1.0-beta01] C:\Users\alruz\.gradle\caches\transforms-3\db5e5df2bf71db2b9b9666cb10ebcf4e\transformed\jetified-camera-camera2-1.1.0-beta01\AndroidManifest.xml:29:13-37
+85            <meta-data
+85-->[androidx.camera:camera-camera2:1.1.0-beta01] C:\Users\alruz\.gradle\caches\transforms-3\db5e5df2bf71db2b9b9666cb10ebcf4e\transformed\jetified-camera-camera2-1.1.0-beta01\AndroidManifest.xml:32:13-34:89
+86                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+86-->[androidx.camera:camera-camera2:1.1.0-beta01] C:\Users\alruz\.gradle\caches\transforms-3\db5e5df2bf71db2b9b9666cb10ebcf4e\transformed\jetified-camera-camera2-1.1.0-beta01\AndroidManifest.xml:33:17-103
+87                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+87-->[androidx.camera:camera-camera2:1.1.0-beta01] C:\Users\alruz\.gradle\caches\transforms-3\db5e5df2bf71db2b9b9666cb10ebcf4e\transformed\jetified-camera-camera2-1.1.0-beta01\AndroidManifest.xml:34:17-86
+88        </service>
+89
+90        <provider
+90-->[androidx.emoji2:emoji2:1.0.0] C:\Users\alruz\.gradle\caches\transforms-3\70401492c3ac22033204f3a60cb4ddc1\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+91            android:name="androidx.startup.InitializationProvider"
+91-->[androidx.emoji2:emoji2:1.0.0] C:\Users\alruz\.gradle\caches\transforms-3\70401492c3ac22033204f3a60cb4ddc1\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+92            android:authorities="com.android.example.camerax.video.androidx-startup"
+92-->[androidx.emoji2:emoji2:1.0.0] C:\Users\alruz\.gradle\caches\transforms-3\70401492c3ac22033204f3a60cb4ddc1\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+93            android:exported="false" >
+93-->[androidx.emoji2:emoji2:1.0.0] C:\Users\alruz\.gradle\caches\transforms-3\70401492c3ac22033204f3a60cb4ddc1\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+94            <meta-data
+94-->[androidx.emoji2:emoji2:1.0.0] C:\Users\alruz\.gradle\caches\transforms-3\70401492c3ac22033204f3a60cb4ddc1\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+95                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+95-->[androidx.emoji2:emoji2:1.0.0] C:\Users\alruz\.gradle\caches\transforms-3\70401492c3ac22033204f3a60cb4ddc1\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+96                android:value="androidx.startup" />
+96-->[androidx.emoji2:emoji2:1.0.0] C:\Users\alruz\.gradle\caches\transforms-3\70401492c3ac22033204f3a60cb4ddc1\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+97            <meta-data
+97-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\alruz\.gradle\caches\transforms-3\92695b0ae1d8d5c604b2f507dc67bde2\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+98                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+98-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\alruz\.gradle\caches\transforms-3\92695b0ae1d8d5c604b2f507dc67bde2\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+99                android:value="androidx.startup" />
+99-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\alruz\.gradle\caches\transforms-3\92695b0ae1d8d5c604b2f507dc67bde2\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+100        </provider>
+101    </application>
+102
+103</manifest>

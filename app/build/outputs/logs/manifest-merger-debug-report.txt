@@ -1,22 +1,22 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:52:9-60:20
+INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:57:9-65:20
 	android:grantUriPermissions
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:56:13-47
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:61:13-47
 	android:authorities
-		INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:54:13-60
+		INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:59:13-60
 	android:exported
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:55:13-37
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:60:13-37
 	android:name
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:53:13-62
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:58:13-62
 manifest
-ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:17:1-64:12
-INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:17:1-64:12
-INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:17:1-64:12
-INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:17:1-64:12
+ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:17:1-69:12
+INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:17:1-69:12
+INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:17:1-69:12
+INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:17:1-69:12
 MERGED from [androidx.databinding:viewbinding:7.4.2] C:\Users\alruz\.gradle\caches\transforms-3\b171b0dc4feb87c066442c5b458af727\transformed\jetified-viewbinding-7.4.2\AndroidManifest.xml:2:1-7:12
-MERGED from [:utils] C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\utils\build\intermediates\merged_manifest\debug\AndroidManifest.xml:17:1-22:12
+MERGED from [:utils] C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\utils\build\intermediates\merged_manifest\debug\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.4.0-rc01] C:\Users\alruz\.gradle\caches\transforms-3\e3ba1b9ae968a27f8165095fa3697188\transformed\navigation-fragment-ktx-2.4.0-rc01\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment:2.4.0-rc01] C:\Users\alruz\.gradle\caches\transforms-3\07a2c11782881c36ed1442dd7c4685b0\transformed\navigation-fragment-2.4.0-rc01\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment-ktx:1.4.0] C:\Users\alruz\.gradle\caches\transforms-3\fc17fd0389abc54a90440bd23302ef6b\transformed\jetified-fragment-ktx-1.4.0\AndroidManifest.xml:17:1-24:12
@@ -80,45 +80,45 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\alruz\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\alruz\.gradle\caches\transforms-3\043302bd6358b5c89e45c84fa604c4e5\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\alruz\.gradle\caches\transforms-3\6e61f83b49ff03812fb947bb96bdabb8\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\alruz\.gradle\caches\transforms-3\e12a521233f845a57d66ddc41495d8ed\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:17:1-64:12
-INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:17:1-64:12
-INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:17:1-64:12
+INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:17:1-69:12
+INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:17:1-69:12
+INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:17:1-69:12
 	package
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:19:5-48
-		INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:19:5-48
+		INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:17:1-64:12
-		INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:17:1-69:12
+		INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:18:5-51
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:18:5-51
 	android:versionCode
-		INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:17:1-64:12
-		INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:17:1-69:12
+		INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:17:11-69
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:17:11-69
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:22:5-65
+ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:27:5-65
 	android:name
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:22:22-62
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:27:22-62
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:23:5-71
+ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:28:5-71
 	android:name
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:23:22-68
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:28:22-68
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:24:5-25:38
+ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:29:5-30:38
 	android:maxSdkVersion
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:25:9-35
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:30:9-35
 	android:name
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:24:22-78
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:29:22-78
 uses-feature#android.hardware.camera.any
-ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:28:5-64
+ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:33:5-64
 	android:name
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:28:19-61
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:33:19-61
 application
-ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:30:5-62:19
+ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:35:5-67:19
 MERGED from [com.google.android.material:material:1.4.0-beta01] C:\Users\alruz\.gradle\caches\transforms-3\3f9f7d3c8d36d8e88edbab3de82dce91\transformed\material-1.4.0-beta01\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0-beta01] C:\Users\alruz\.gradle\caches\transforms-3\3f9f7d3c8d36d8e88edbab3de82dce91\transformed\material-1.4.0-beta01\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.2] C:\Users\alruz\.gradle\caches\transforms-3\a2cc2963d7e082fcc4c8f4888afe4088\transformed\constraintlayout-2.1.2\AndroidManifest.xml:9:5-20
@@ -142,43 +142,43 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\alruz\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] C:\Users\alruz\.gradle\caches\transforms-3\29af6113121a23886b71526c7a9f1544\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:33:9-41
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:38:9-41
 	tools:ignore
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:35:9-60
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:40:9-60
 	android:icon
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:34:9-45
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:39:9-45
 	android:allowBackup
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:32:9-35
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:37:9-35
 	android:name
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:31:9-40
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:36:9-40
 activity#com.example.android.camerax.video.MainActivity
-ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:37:9-49:20
+ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:42:9-54:20
 	android:clearTaskOnLaunch
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:39:13-45
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:44:13-45
 	android:exported
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:41:13-36
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:46:13-36
 	android:theme
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:40:13-44
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:45:13-44
 	android:name
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:38:13-74
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:43:13-74
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:44:13-47:29
+ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:49:13-52:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:45:17-69
+ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:50:17-69
 	android:name
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:45:25-66
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:50:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:46:17-77
+ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:51:17-77
 	android:name
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:46:27-74
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:51:27-74
 uses-sdk
-INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:7.4.2] C:\Users\alruz\.gradle\caches\transforms-3\b171b0dc4feb87c066442c5b458af727\transformed\jetified-viewbinding-7.4.2\AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:viewbinding:7.4.2] C:\Users\alruz\.gradle\caches\transforms-3\b171b0dc4feb87c066442c5b458af727\transformed\jetified-viewbinding-7.4.2\AndroidManifest.xml:5:5-44
-MERGED from [:utils] C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\utils\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:5-44
-MERGED from [:utils] C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\utils\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:5-44
+MERGED from [:utils] C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\utils\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:5-44
+MERGED from [:utils] C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\utils\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.4.0-rc01] C:\Users\alruz\.gradle\caches\transforms-3\e3ba1b9ae968a27f8165095fa3697188\transformed\navigation-fragment-ktx-2.4.0-rc01\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.4.0-rc01] C:\Users\alruz\.gradle\caches\transforms-3\e3ba1b9ae968a27f8165095fa3697188\transformed\navigation-fragment-ktx-2.4.0-rc01\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-fragment:2.4.0-rc01] C:\Users\alruz\.gradle\caches\transforms-3\07a2c11782881c36ed1442dd7c4685b0\transformed\navigation-fragment-2.4.0-rc01\AndroidManifest.xml:20:5-22:41
@@ -305,22 +305,22 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\alruz\.gradle\caches\transform
 MERGED from [androidx.print:print:1.0.0] C:\Users\alruz\.gradle\caches\transforms-3\6e61f83b49ff03812fb947bb96bdabb8\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\alruz\.gradle\caches\transforms-3\e12a521233f845a57d66ddc41495d8ed\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\alruz\.gradle\caches\transforms-3\e12a521233f845a57d66ddc41495d8ed\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:57:13-59:53
+ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:62:13-64:53
 	android:resource
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:59:17-51
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:64:17-51
 	android:name
-		ADDED from C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\AndroidManifest.xml:58:17-67
+		ADDED from C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\AndroidManifest.xml:63:17-67
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0-rc01] C:\Users\alruz\.gradle\caches\transforms-3\04b50b440cf8c12df80a21a5cbf9edc9\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:25:9-27:40
 	android:required

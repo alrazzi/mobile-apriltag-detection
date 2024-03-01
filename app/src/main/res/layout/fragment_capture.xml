@@ -23,39 +23,32 @@
 
     <androidx.camera.view.PreviewView
         android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:background="@color/bkPurple"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintDimensionRatio="V,9:16"/>
+        app:layout_constraintDimensionRatio="V,3:4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/vertical_guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.50" />
+    </androidx.camera.view.PreviewView>
 
     <TextView
-        android:id="@+id/capture_status"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="47dp"
-        android:background="@color/transparent"
-        android:lines="2"
-        android:maxLines="2"
-        android:textColor="@color/txWhite"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/horizontal_guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.50" />
+        android:background="#FF0000"
+        android:fontFamily="monospace"
+        android:maxWidth="250dp"
+        android:text="no est."
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/previewView"
+        app:layout_constraintStart_toStartOf="@+id/previewView"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

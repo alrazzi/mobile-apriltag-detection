@@ -4,15 +4,11 @@ package com.example.android.camerax.video.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CheckBox;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.camera.view.PreviewView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.constraintlayout.widget.Guideline;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.android.camerax.video.R;
@@ -24,179 +20,22 @@ public final class FragmentCaptureBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
 
-  /**
-   * This binding is not available in all configurations.
-   * <p>
-   * Present:
-   * <ul>
-   *   <li>layout-land/</li>
-   * </ul>
-   *
-   * Absent:
-   * <ul>
-   *   <li>layout/</li>
-   * </ul>
-   */
-  @Nullable
-  public final CheckBox audioSelection;
-
-  /**
-   * This binding is not available in all configurations.
-   * <p>
-   * Present:
-   * <ul>
-   *   <li>layout-land/</li>
-   * </ul>
-   *
-   * Absent:
-   * <ul>
-   *   <li>layout/</li>
-   * </ul>
-   */
-  @Nullable
-  public final ImageButton cameraButton;
-
-  /**
-   * This binding is not available in all configurations.
-   * <p>
-   * Present:
-   * <ul>
-   *   <li>layout-land/</li>
-   * </ul>
-   *
-   * Absent:
-   * <ul>
-   *   <li>layout/</li>
-   * </ul>
-   */
-  @Nullable
-  public final ImageButton captureButton;
-
-  @NonNull
-  public final TextView captureStatus;
-
   @NonNull
   public final ConstraintLayout container;
-
-  /**
-   * This binding is not available in all configurations.
-   * <p>
-   * Present:
-   * <ul>
-   *   <li>layout/</li>
-   * </ul>
-   *
-   * Absent:
-   * <ul>
-   *   <li>layout-land/</li>
-   * </ul>
-   */
-  @Nullable
-  public final Guideline horizontalGuideline;
-
-  /**
-   * This binding is not available in all configurations.
-   * <p>
-   * Present:
-   * <ul>
-   *   <li>layout-land/</li>
-   * </ul>
-   *
-   * Absent:
-   * <ul>
-   *   <li>layout/</li>
-   * </ul>
-   */
-  @Nullable
-  public final Guideline landHorizontalGuideline;
-
-  /**
-   * This binding is not available in all configurations.
-   * <p>
-   * Present:
-   * <ul>
-   *   <li>layout-land/</li>
-   * </ul>
-   *
-   * Absent:
-   * <ul>
-   *   <li>layout/</li>
-   * </ul>
-   */
-  @Nullable
-  public final Guideline landVerticalGuideline;
 
   @NonNull
   public final PreviewView previewView;
 
-  /**
-   * This binding is not available in all configurations.
-   * <p>
-   * Present:
-   * <ul>
-   *   <li>layout-land/</li>
-   * </ul>
-   *
-   * Absent:
-   * <ul>
-   *   <li>layout/</li>
-   * </ul>
-   */
-  @Nullable
-  public final RecyclerView qualitySelection;
-
-  /**
-   * This binding is not available in all configurations.
-   * <p>
-   * Present:
-   * <ul>
-   *   <li>layout-land/</li>
-   * </ul>
-   *
-   * Absent:
-   * <ul>
-   *   <li>layout/</li>
-   * </ul>
-   */
-  @Nullable
-  public final ImageButton stopButton;
-
-  /**
-   * This binding is not available in all configurations.
-   * <p>
-   * Present:
-   * <ul>
-   *   <li>layout/</li>
-   * </ul>
-   *
-   * Absent:
-   * <ul>
-   *   <li>layout-land/</li>
-   * </ul>
-   */
-  @Nullable
-  public final Guideline verticalGuideline;
+  @NonNull
+  public final TextView textView2;
 
   private FragmentCaptureBinding(@NonNull ConstraintLayout rootView,
-      @Nullable CheckBox audioSelection, @Nullable ImageButton cameraButton,
-      @Nullable ImageButton captureButton, @NonNull TextView captureStatus,
-      @NonNull ConstraintLayout container, @Nullable Guideline horizontalGuideline,
-      @Nullable Guideline landHorizontalGuideline, @Nullable Guideline landVerticalGuideline,
-      @NonNull PreviewView previewView, @Nullable RecyclerView qualitySelection,
-      @Nullable ImageButton stopButton, @Nullable Guideline verticalGuideline) {
+      @NonNull ConstraintLayout container, @NonNull PreviewView previewView,
+      @NonNull TextView textView2) {
     this.rootView = rootView;
-    this.audioSelection = audioSelection;
-    this.cameraButton = cameraButton;
-    this.captureButton = captureButton;
-    this.captureStatus = captureStatus;
     this.container = container;
-    this.horizontalGuideline = horizontalGuideline;
-    this.landHorizontalGuideline = landHorizontalGuideline;
-    this.landVerticalGuideline = landVerticalGuideline;
     this.previewView = previewView;
-    this.qualitySelection = qualitySelection;
-    this.stopButton = stopButton;
-    this.verticalGuideline = verticalGuideline;
+    this.textView2 = textView2;
   }
 
   @Override
@@ -226,31 +65,7 @@ public final class FragmentCaptureBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.audio_selection;
-      CheckBox audioSelection = ViewBindings.findChildViewById(rootView, id);
-
-      id = R.id.camera_button;
-      ImageButton cameraButton = ViewBindings.findChildViewById(rootView, id);
-
-      id = R.id.capture_button;
-      ImageButton captureButton = ViewBindings.findChildViewById(rootView, id);
-
-      id = R.id.capture_status;
-      TextView captureStatus = ViewBindings.findChildViewById(rootView, id);
-      if (captureStatus == null) {
-        break missingId;
-      }
-
       ConstraintLayout container = (ConstraintLayout) rootView;
-
-      id = R.id.horizontal_guideline;
-      Guideline horizontalGuideline = ViewBindings.findChildViewById(rootView, id);
-
-      id = R.id.land_horizontal_guideline;
-      Guideline landHorizontalGuideline = ViewBindings.findChildViewById(rootView, id);
-
-      id = R.id.land_vertical_guideline;
-      Guideline landVerticalGuideline = ViewBindings.findChildViewById(rootView, id);
 
       id = R.id.previewView;
       PreviewView previewView = ViewBindings.findChildViewById(rootView, id);
@@ -258,18 +73,14 @@ public final class FragmentCaptureBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.quality_selection;
-      RecyclerView qualitySelection = ViewBindings.findChildViewById(rootView, id);
+      id = R.id.textView2;
+      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
+      if (textView2 == null) {
+        break missingId;
+      }
 
-      id = R.id.stop_button;
-      ImageButton stopButton = ViewBindings.findChildViewById(rootView, id);
-
-      id = R.id.vertical_guideline;
-      Guideline verticalGuideline = ViewBindings.findChildViewById(rootView, id);
-
-      return new FragmentCaptureBinding((ConstraintLayout) rootView, audioSelection, cameraButton,
-          captureButton, captureStatus, container, horizontalGuideline, landHorizontalGuideline,
-          landVerticalGuideline, previewView, qualitySelection, stopButton, verticalGuideline);
+      return new FragmentCaptureBinding((ConstraintLayout) rootView, container, previewView,
+          textView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

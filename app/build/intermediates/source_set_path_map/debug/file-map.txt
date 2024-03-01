@@ -38,12 +38,12 @@ com.example.android.camerax.video.app-navigation-fragment-ktx-2.4.0-rc01-36 C:\U
 com.example.android.camerax.video.app-transition-1.4.1-37 C:\Users\alruz\.gradle\caches\transforms-3\e9021476095bfe6d9e130f2373b715fc\transformed\transition-1.4.1\res
 com.example.android.camerax.video.app-appcompat-1.4.0-38 C:\Users\alruz\.gradle\caches\transforms-3\fa938055a877e225383a4d09a3a30fe7\transformed\appcompat-1.4.0\res
 com.example.android.camerax.video.app-jetified-fragment-ktx-1.4.0-39 C:\Users\alruz\.gradle\caches\transforms-3\fc17fd0389abc54a90440bd23302ef6b\transformed\jetified-fragment-ktx-1.4.0\res
-com.example.android.camerax.video.app-pngs-40 C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\build\generated\res\pngs\debug
-com.example.android.camerax.video.app-resValues-41 C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\build\generated\res\resValues\debug
-com.example.android.camerax.video.app-rs-42 C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\build\generated\res\rs\debug
-com.example.android.camerax.video.app-mergeDebugResources-43 C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\build\intermediates\incremental\debug\mergeDebugResources\merged.dir
-com.example.android.camerax.video.app-mergeDebugResources-44 C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\build\intermediates\incremental\debug\mergeDebugResources\stripped.dir
-com.example.android.camerax.video.app-merged_res-45 C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\build\intermediates\merged_res\debug
-com.example.android.camerax.video.app-debug-46 C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\debug\res
-com.example.android.camerax.video.app-main-47 C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\app\src\main\res
-com.example.android.camerax.video.app-packaged_res-48 C:\Users\alruz\Documents\Code\Scrap\Camera2Basic\CameraXVideo\utils\build\intermediates\packaged_res\debug
+com.example.android.camerax.video.app-pngs-40 C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\build\generated\res\pngs\debug
+com.example.android.camerax.video.app-resValues-41 C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\build\generated\res\resValues\debug
+com.example.android.camerax.video.app-rs-42 C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\build\generated\res\rs\debug
+com.example.android.camerax.video.app-mergeDebugResources-43 C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\build\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.example.android.camerax.video.app-mergeDebugResources-44 C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\build\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.example.android.camerax.video.app-merged_res-45 C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\build\intermediates\merged_res\debug
+com.example.android.camerax.video.app-debug-46 C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\debug\res
+com.example.android.camerax.video.app-main-47 C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\app\src\main\res
+com.example.android.camerax.video.app-packaged_res-48 C:\Users\alruz\Documents\Code\Android Dev\WearableVisualAidProject\utils\build\intermediates\packaged_res\debug

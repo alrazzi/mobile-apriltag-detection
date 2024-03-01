@@ -123,7 +123,7 @@ apriltag_pose_t get_pose(apriltag_detection_t *detection){
 double get_pose_error(apriltag_detection_t detection){
     apriltag_detection_info_t info;
     info.det = &detection;
-    info.tagsize = 0.02; // in meters
+    info.tagsize = 0.04; // in meters
     info.fx = 657;
     info.fy = 657.26;
     info.cx = 312.18;
@@ -135,8 +135,28 @@ double get_pose_error(apriltag_detection_t detection){
 
     return err;
 }
+bool is_int_in_jintArray(JNIEnv *env, jintArray arr, int x) {
+    jsize len = (*env)->GetArrayLength(env, arr);
+    jint *elements = (*env)->GetIntArrayElements(env, arr, NULL);
 
-apriltag_detection_t* get_best_detection(zarray_t *detections){
+    // Iterate through the array elements to check if x is present
+    for (jsize i = 0; i < len; i++) {
+        int y = elements[i];
+        int z = y;
+    }
+    for (jsize i = 0; i < len; i++) {
+        if (elements[i] == (jint)x) {
+            // Value x is in the array
+            (*env)->ReleaseIntArrayElements(env, arr, elements, JNI_ABORT); // Release without copying back changes
+            return true;
+        }
+    }
+
+    // Value x is not in the array
+    (*env)->ReleaseIntArrayElements(env, arr, elements, JNI_ABORT); // Release without copying back changes
+    return false;
+}
+apriltag_detection_t* get_best_detection(zarray_t *detections, JNIEnv *env, jintArray ids){
     apriltag_detection_t* best_detection = NULL;
     double least_error = MAXFLOAT;
     apriltag_pose_t pose;
@@ -144,9 +164,9 @@ apriltag_detection_t* get_best_detection(zarray_t *detections){
         apriltag_detection_t *det;
         zarray_get(detections, i, &det);
 
-//        if(!is_tag_in_field(det->id)){
-//            continue;
-//        }
+        if(!is_int_in_jintArray(env, ids, det->id)){
+            continue;
+        }
 
         double err = get_pose_error(*det);
         if(err < least_error){
@@ -167,30 +187,13 @@ void cleanup(apriltag_detector_t *td ,apriltag_family_t *tf,image_u8_t *img){
     }
 }
 
-double get_yaw(apriltag_pose_t pose){
-    double x = pose.t->data[0];
-    double y = pose.t->data[1];
-    double z = pose.t->data[2];
-
-    double yaw = atan2(x, z) * 180.0 / M_PI;
-    return yaw;
-}
-
-double get_dist(apriltag_pose_t pose){
-    double x = pose.t->data[0];
-    double y = pose.t->data[1];
-    double z = pose.t->data[2];
-
-    double dist = sqrt(pow(x,2) + pow(y,2) + pow(z,2));
-    return dist;
-}
 
 // Function to create a Java Result object
-jobject createResultObject(JNIEnv *env, int id, double yaw, double dist, int numDetections, jobject transformPacket) {
+jobject createResultObject(JNIEnv *env, int id, int numDetections, jobject transformPacket) {
     jclass resultClass = (*env)->FindClass(env, "com/example/android/camerax/video/Result");
     jmethodID resultConstructor = (*env)->GetMethodID(env, resultClass, "<init>",
-                                                      "(IDDILcom/example/android/camerax/video/TransformPacket;)V");
-    return (*env)->NewObject(env, resultClass, resultConstructor, id, yaw, dist, numDetections, transformPacket);
+                                                      "(IILcom/example/android/camerax/video/TransformPacket;)V");
+    return (*env)->NewObject(env, resultClass, resultConstructor, id, numDetections, transformPacket);
 }
 
 jobject createEmptyResult(JNIEnv *env) {
@@ -232,23 +235,10 @@ jobject apriltag_pose_t_to_transformPacket(JNIEnv *env, apriltag_pose_t pose_t){
     );
     return transformPacketObj;
 }
-
-// Define a function to create and initialize an apriltag_pose_t instance
-apriltag_pose_t* createAprilTagPose(double R_data[9], double t_data[3]) {
-    apriltag_pose_t* pose = malloc(sizeof(apriltag_pose_t));
-
-    // Assuming matd_create_data initializes a matrix with the provided data
-    pose->R = matd_create_data(3, 3, R_data);
-    pose->t = matd_create_data(3, 1, t_data);
-
-    return pose;
-}
-
-//DONT DELETE:
 JNIEXPORT jobject
 JNICALL
 Java_com_example_android_camerax_video_apriltag_00024Companion_getApriltagResult
-( JNIEnv* env, jobject thiz, jbyteArray pixelArray, jint width, jint height)
+( JNIEnv* env, jobject thiz, jbyteArray pixelArray, jint width, jint height, jintArray ids)
 {
     image_u8_t *img = (image_u8_t *) pixel_array_to_uint_8_img(env, thiz, pixelArray, width, height);
 //    char* result = test_img(env, thiz, pixelArray, width, height, (jlong) img);
@@ -258,42 +248,19 @@ Java_com_example_android_camerax_video_apriltag_00024Companion_getApriltagResult
     apriltag_detector_add_family(td, tf);
     zarray_t *detections = apriltag_detector_detect(td, img);
 
-    apriltag_detection_t* best_detection = get_best_detection(detections);
+    apriltag_detection_t* best_detection = get_best_detection(detections, env, ids);
     if(best_detection==NULL){
         cleanup(td, tf, img);
         return createEmptyResult(env);
     }
     apriltag_pose_t pose = get_pose(best_detection);
 
-    //DELETE
-    matd_t *rMatrix = pose.R;
-    matd_t *tMatrix = pose.t;
-    double t1 = matd_get(tMatrix, 0, 0);
-    double t2 = matd_get(tMatrix, 1, 0);
-    double t3 = matd_get(tMatrix, 2, 0);
-    double r1 = matd_get(rMatrix, 0, 0);
-    double r2 = matd_get(rMatrix, 0, 1);
-    double r3 = matd_get(rMatrix, 0, 2);
-    double r4 = matd_get(rMatrix, 1, 0);
-    double r5 = matd_get(rMatrix, 1, 1);
-    double r6 = matd_get(rMatrix, 1, 2);
-    double r7 = matd_get(rMatrix, 2, 0);
-    double r8 = matd_get(rMatrix, 2, 1);
-    double r9 = matd_get(rMatrix, 2, 2);
-    //DELETE
     int num_detections = zarray_size(detections);
     int id = best_detection->id;
-    double yaw = get_yaw(pose);
-    double dist = get_dist(pose);
 
     jobject transformPacket = apriltag_pose_t_to_transformPacket(env, pose);
-    jobject result = createResultObject(env, id, yaw, dist, num_detections, transformPacket);
+    jobject result = createResultObject(env, id, num_detections, transformPacket);
 
     cleanup(td, tf, img);
-
     return result;
-
-//    char num_det_str[60];  // Assuming a maximum of 20 characters for the integer
-//    snprintf(num_det_str, sizeof(num_det_str), "Id detected: %d; yaw: %.1f; dist: %.2f; # detections: %d", id, yaw, dist, num_detections);
-//    return (*env)->NewStringUTF(env, num_det_str);
 }

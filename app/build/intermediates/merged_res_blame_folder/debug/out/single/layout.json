@@ -1,26 +1,18 @@
 [
     {
-        "merged": "C:\\Users\\alruz\\.gradle\\daemon\\7.5\\com.example.android.camerax.video.app-mergeDebugResources-44:\\layout\\fragment_permission.xml",
-        "source": "C:\\Users\\alruz\\.gradle\\daemon\\7.5\\com.example.android.camerax.video.app-main-47:\\layout\\fragment_permission.xml"
+        "merged": "com.example.android.camerax.video.app-mergeDebugResources-44:/layout/video_quality_item.xml",
+        "source": "com.example.android.camerax.video.app-main-47:/layout/video_quality_item.xml"
     },
     {
-        "merged": "C:\\Users\\alruz\\.gradle\\daemon\\7.5\\com.example.android.camerax.video.app-mergeDebugResources-44:\\layout\\fragment_video_viewer.xml",
-        "source": "C:\\Users\\alruz\\.gradle\\daemon\\7.5\\com.example.android.camerax.video.app-main-47:\\layout\\fragment_video_viewer.xml"
-    },
-    {
-        "merged": "C:\\Users\\alruz\\.gradle\\daemon\\7.5\\com.example.android.camerax.video.app-mergeDebugResources-44:\\layout\\fragment_capture.xml",
-        "source": "C:\\Users\\alruz\\.gradle\\daemon\\7.5\\com.example.android.camerax.video.app-main-47:\\layout\\fragment_capture.xml"
-    },
-    {
-        "merged": "C:\\Users\\alruz\\.gradle\\daemon\\7.5\\com.example.android.camerax.video.app-mergeDebugResources-44:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\alruz\\.gradle\\daemon\\7.5\\com.example.android.camerax.video.app-main-47:\\layout\\activity_main.xml"
+        "merged": "com.example.android.camerax.video.app-mergeDebugResources-44:/layout/fragment_permission.xml",
+        "source": "com.example.android.camerax.video.app-main-47:/layout/fragment_permission.xml"
     },
     {
         "merged": "com.example.android.camerax.video.app-mergeDebugResources-44:/layout/fragment_capture.xml",
         "source": "com.example.android.camerax.video.app-main-47:/layout/fragment_capture.xml"
     },
     {
-        "merged": "C:\\Users\\alruz\\.gradle\\daemon\\7.5\\com.example.android.camerax.video.app-mergeDebugResources-44:\\layout\\video_quality_item.xml",
-        "source": "C:\\Users\\alruz\\.gradle\\daemon\\7.5\\com.example.android.camerax.video.app-main-47:\\layout\\video_quality_item.xml"
+        "merged": "com.example.android.camerax.video.app-mergeDebugResources-44:/layout/activity_main.xml",
+        "source": "com.example.android.camerax.video.app-main-47:/layout/activity_main.xml"
     }
 ]

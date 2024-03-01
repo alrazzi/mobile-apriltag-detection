@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\alruz\\.gradle\\caches\\transforms-3\\fa938055a877e225383a4d09a3a30fe7\\transformed\\appcompat-1.4.0\\res\\values-night-v8\\values-night-v8.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,125,209,293,389,491,593,687",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "120,204,288,384,486,588,682,771"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,25",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,125,209,293,389,491,593,2549",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "120,204,288,384,486,588,682,2633"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\alruz\\Documents\\Code\\Scrap\\Camera2Basic\\CameraXVideo\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\alruz\\Documents\\Code\\Android Dev\\WearableVisualAidProject\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -54,6 +37,23 @@
                         "endLines": "29",
                         "endColumns": "12",
                         "endOffsets": "2868"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\alruz\\.gradle\\caches\\transforms-3\\fa938055a877e225383a4d09a3a30fe7\\transformed\\appcompat-1.4.0\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,25",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,2549",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,2633"
                     }
                 }
             ]

@@ -9,7 +9,7 @@ public class Result {
     var isTagDetected: Boolean = false; // Default value is false
 
     // Existing constructor
-    constructor(id: Int, yaw: Double, dist: Double, numDetections: Int, camToTargetPacket: TransformPacket) {
+    constructor(id: Int, numDetections: Int, camToTargetPacket: TransformPacket) {
         this.id = id;
         this.yaw = yaw;
         this.dist = dist;
